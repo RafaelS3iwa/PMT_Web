@@ -26,7 +26,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="/admin/">Home</a>
+                        <a class="nav-link active" aria-current="page" href="/index.php">Home</a>
                         <a class="nav-link" href="/admin/usuarios/">Fazer Login</a>
                         <a class="nav-link" href="/admin/Cadastro/">Cadastrar-se</a>
                         <a class="nav-link" href="/admin/usuarios/">Help</a>
