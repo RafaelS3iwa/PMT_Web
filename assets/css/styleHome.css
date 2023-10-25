@@ -1,0 +1,29 @@
+/* Estilos para o banner */
+.banner1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 175px;
+    background-color: #7C21CB; /* Cor de fundo do banner */
+}
+
+/* Estilos para o conteúdo dentro do banner */
+.content {
+    background-color: transparent; /* Cor de fundo do retângulo */
+    border-radius: 15px; /* Borda arredondada */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center;
+}
+
+/* Estilos para o título do banner */
+.content h1 {
+    font-size: 40px;
+    color: #FFFF97;
+    margin: 10; /* Remover margem padrão */
+}
+
+/* Estilos para o texto do banner */
+.content p {
+    font-size: 25px;
+    color: #FFFF97;
+}

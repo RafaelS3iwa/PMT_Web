@@ -1,0 +1,35 @@
+.banner2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 175px;
+    background-color: #A77EDC; /* Cor de fundo do banner */
+}
+
+/* Estilos para o conteúdo dentro do banner */
+.content {
+    background-color: transparent; /* Cor de fundo do retângulo */
+    border-radius: 15px; /* Borda arredondada */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center;
+}
+
+/* Estilos para o título do banner */
+.content h1 {
+    font-size: 40px;
+    color: #FFFF97;
+    margin: 10; /* Remover margem padrão */
+}
+
+/* Estilos para o texto do banner */
+.content p {
+    font-size: 25px;
+    color: #6109AC;
+}
+/* Estilos para o título com retângulo e bordas arredondadas */
+.title-with-border {
+    background-color: #FFA452;
+    color: #fff; /* Cor do texto no título */
+    border-radius: 10px; /* Borda arredondada */
+    padding: 10px; /* Espaçamento interno */
+}

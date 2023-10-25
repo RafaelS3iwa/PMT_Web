@@ -2,18 +2,36 @@
 require_once $_SERVER['DOCUMENT_ROOT'] . "/includes/cabecalho.php";
 ?>
 
-<main class="container mt-3 mb-3">
-    <h1 style="color: white;">Menu Inicial</h1>
-</main>
-<style>
-  /* Estilo para a imagem de fundo */
-  body {
-    background-image: url('/assets/img/pexels-marek-piwnicki-5913337.jpg'); /* Nome da imagem que você baixou */
-    background-size: 1950px 1150px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
-</style>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banners</title>
+  <link rel="stylesheet" type="text/css" href="/assets/css/styleHome.css">
+  <link rel="stylesheet" type="text/css" href="/assets/css/styleHome2.css">
+</head>
+
+<body>
+  <div class="banner banner1">
+    <div class="content">
+      <h1>PMT</h1>
+      <p>Encontre, Conquiste, Triunfe</p>
+    </div>
+  </div>
+
+  <div class="banner banner2">
+    <div class="content">
+      <h1 class="title-with-border">A Empresa</h1>
+      <p>Texto do segundo banner. Você pode adicionar qualquer conteúdo aqui.</p>
+    </div>
+  </div>
+</body>
+
+</html>
+
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . "/includes/rodape.php";
 ?>
