@@ -60,4 +60,21 @@ class Usuario {
             return false; 
       }
     }
+
+    /**
+     * Exclui Usuário
+     */
+    public function excluir($id_usuario)
+    {
+        try{
+            $query = "DELETE FROM {$this->table} WHERE id_usuario = :id_usuario"; 
+            $stmt = $this->db->prepare($query); 
+            $stmt->bindParam(':id_usuario', $id_usuario, PDO::PARAM_INT); 
+            $stmt->execute();
+            return true; 
+        }catch(PDOException $e){
+            echo 'Erro na preparação da exclusão: ' . $e->getMessage(); 
+            return false;   
+        }
+    }
 }

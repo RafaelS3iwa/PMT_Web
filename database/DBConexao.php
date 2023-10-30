@@ -3,7 +3,7 @@
 class DBConexao{
     //Configurações do banco de dados
     private $host = "localhost";
-    private $dbname = "PMT";
+    private $dbname = "pmt";
     private $username = "root";
     private $password = "senac2023";
 

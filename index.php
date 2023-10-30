@@ -15,14 +15,14 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/includes/cabecalho.php";
 </head>
 
 <body>
-  <div class="banner banner1">
+  <div class="banner bannerHome1">
     <div class="content">
       <h1>PMT</h1>
       <p>Encontre, Conquiste, Triunfe</p>
     </div>
   </div>
 
-  <div class="banner banner2">
+  <div class="banner bannerHome2">
     <div class="content">
       <h1 class="title-with-border">A Empresa</h1>
       <p>Texto do segundo banner. Você pode adicionar qualquer conteúdo aqui.</p>

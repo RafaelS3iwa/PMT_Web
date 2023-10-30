@@ -1,4 +1,4 @@
-.banner2 {
+.bannerHome2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,7 +24,7 @@
 /* Estilos para o texto do banner */
 .content p {
     font-size: 25px;
-    color: #6109AC;
+    color: #020c0c;
 }
 /* Estilos para o título com retângulo e bordas arredondadas */
 .title-with-border {
