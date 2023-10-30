@@ -77,4 +77,13 @@ class Usuario {
             return false;   
         }
     }
+
+    public function adicionar()
+    {
+        try{
+            
+        }catch(PDOException $e){
+
+        }
+    }
 }
