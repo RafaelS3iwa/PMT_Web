@@ -78,12 +78,16 @@ class Usuario {
         }
     }
 
-    public function adicionar()
+    public function listar()
     {
         try{
+            $query = "SELECT * FROM {$this->table}"; 
+            $stmt = $this->db->query($query); 
+            return $stmt->fetchAll(PDO::FETCH_OBJ);
             
         }catch(PDOException $e){
-
+            echo 'Erro na inserção: ' . $e->getMessage(); 
+            return null; 
         }
     }
 }

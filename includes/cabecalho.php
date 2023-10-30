@@ -30,7 +30,7 @@
                     <div class="navbar-nav">
                         <a class="custom-button" href="/index.php">Home</a>
                         <a class="custom-button" href="/admin/usuarios/">Fazer Login</a>
-                        <a class="custom-button" href="/admin/Cadastro/">Cadastrar-se</a>
+                        <a class="custom-button" href="/admin/usuarios/cadastrar.php">Cadastrar-se</a>
                         <a class="custom-button" href="#">Help</a>
                     </div>
                 </div>

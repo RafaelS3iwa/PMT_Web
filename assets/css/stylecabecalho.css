@@ -8,7 +8,7 @@
     padding: 10px 20px;
     background-color: rgb(var(--bs-primary-rgb));
     /* Cor de fundo do botão usando a variável correta */
-    color: purple;
+    color: #6109AC;
     /* Cor do texto no botão */
     border: none;
     border-radius: 8px;
