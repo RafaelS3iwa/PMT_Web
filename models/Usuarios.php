@@ -6,7 +6,8 @@ class Usuario {
     protected $db;
     protected $table = "usuarios"; 
 
-    public function __construct(){
+    public function __construct()
+    {
             $this->db = DBConexao::getConexao();
     }
 
