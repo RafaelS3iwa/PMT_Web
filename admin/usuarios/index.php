@@ -32,8 +32,8 @@
                     <td><?=$user->id_usuario?></td>
                     <td><?=$user->nome_completo?></td>
                     <td><?=$user->nome_social?></td>
+                    <td><?=$user->data_nascimento?></td>
                     <td><?=$user->email?></td>
-                    <td><?=$user->perfil?></td>
                     <td>
                             <!-- o ponto de interrogação significa URL ? Arquivo -->
                             <a href="editar.php?id_usuario=<?=$user->id_usuario?>" class="btn btn-primary btn-sm">Editar</a>

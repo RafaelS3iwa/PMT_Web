@@ -1,9 +1,6 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . "/includes/cabecalho.php";
 require_once $_SERVER["DOCUMENT_ROOT"] ."/controllers/UsuarioController.php";
-
-$usuarioController = new UsuarioController();
-$usuarioController->listarUsuarios(); 
 ?>
 
 <!DOCTYPE html>

@@ -14,7 +14,7 @@ class UsuarioController
     }
 
     public function cadastrarUsuario(){
-        if($_SERVER["REQUEST_METHOD"] === 'POST'){
+        if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
             $dados = [
                 'nome_completo' => $_POST['nome_completo'], 
@@ -27,6 +27,23 @@ class UsuarioController
             $this->usuarioModel->cadastrar($dados);
             header('Location: index.php'); 
             exit; 
+        }
+    }
+
+    public function loginUsuario(){
+        if($_SERVER['REQUEST_METHOD'] === 'POST'){
+            $email = $_POST['email']; 
+            $senha = $_POST['senha'];
+
+            $usuario = Usuario::autenticarLogin($email, $senha);
+            if ($usuario){ 
+                session_start(); 
+                $_SESSION['id_usuario'] = $usuario->id;
+                header("Location: page.php"); 
+            }else{
+                echo "E-mail ou senha inválidos"; 
+                header("Location: login.php"); 
+            }
         }
     }
 }
