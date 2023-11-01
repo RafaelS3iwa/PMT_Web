@@ -1,6 +1,6 @@
 <?php 
     require_once $_SERVER['DOCUMENT_ROOT'] . "/includes/cabecalho.php"; 
-    require_once $_SERVER["DOCUMENT_ROOT"] ."/controllers/UsuarioController.php";
+    require_once $_SERVER['DOCUMENT_ROOT'] ."/controllers/UsuarioController.php";
 
     $usuarioController = new UsuarioController();
     $usuarioController->cadastrarUsuario();
@@ -39,70 +39,66 @@ $(document).ready(function () {
     });
 });
 </script>
-<style>
-  /* Estilo para a imagem de fundo */
-  body {
-    background-image: url('/assets/img/pexels-marek-piwnicki-5913337.jpg'); /* Nome da imagem que você baixou */
-    background-size: 1950px 1150px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
-</style>
 
 <main class="container mt-3 mb-3" >
     <h1 style="color: white;">Cadastro</h1>
 
-<div class="container mt-5">
-    <div class="card">
-        <div class="card-body">
-            <form action="cadastrar.php" method="post" class="row g-3">
-                <div class="col-12">
-                    <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
-                    <select class="form-select" id="inlineFormSelectPref">
-                        <option selected>Escolha...</option>
-                        <option value="1">Usuário</option>
-                        <option value="2">Candidato</option>
-                        <option value="3">Empresa</option>
-                    </select>
-                </div>
+        <div class="container mt-5">
+            <div class="card">
+                <div class="card-body">
+                    <div class="col-12">
+                        <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
+                        <select class="form-select" id="inlineFormSelectPref">
+                            <option selected>Escolha...</option>
+                            <option value="1">Usuário</option>
+                            <option value="2">Candidato</option>
+                            <option value="3">Empresa</option>
+                        </select>
+                    </div>
 
-                <div class="col-md-4">
-                    <label for="nome_completo" class="form-label">Nome Completo</label>
-                    <input type="text" name="nome_completo" id="nome_completo" class="form-control" >
-                </div>
-                <div class="col-md-4">
-                    <label for="nome_social" class="form-label">Nome Social</label>
-                    <input type="text" name="nome_social"  id="nome_social" class="form-control">
-                </div>
-                <div class="col-md-4">
-                    <label for="data_nascimento" class="form-label">Data de Nascimento</label>
-                    <input type="date" name="data_nascimento" id="data_nascimento"  class="form-control">
-                </div>
-                <div class="col-md-6">
-                    <label for="senha" class="form-label">Senha</label>
-                    <div class="input-group">
-                        <input type="password" name="senha"  id="senha" class="form-control">
-                        <button  type="button" id="toggleSenha" class="btn btn-outline-secondary">
-                            <i class="fa fa-eye-slash"></i>
-                        </button>
+                <form action="cadastrar.php" method="post" class="row g-3">
+                    <div class="col-md-4">
+                        <label for="nome_completo" class="form-label">Nome Completo</label>
+                        <input type="text" name="nome_completo" id="nome_completo" class="form-control" >
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <label for="inputConfirmarSenha" class="form-label">Confirmar Senha</label>
-                    <div class="input-group">
-                        <input type="password" name="senha" class="form-control" id="inputConfirmarSenha">
-                        <button type="button" id="toggleConfirmarSenha"  class="btn btn-outline-secondary">
-                            <i class="fa fa-eye-slash"></i>
-                        </button>
+
+                    <div class="col-md-4">
+                        <label for="nome_social" class="form-label">Nome Social</label>
+                        <input type="text" name="nome_social"  id="nome_social" class="form-control">
                     </div>
-                </div>
-                <div class="col-12">
-                    <button type="submit" class="btn btn-primary">Cadastrar</button>
-                </div>
-            </form>
+
+                    <div class="col-md-4">
+                        <label for="data_nascimento" class="form-label">Data de Nascimento</label>
+                        <input type="date" name="data_nascimento" id="data_nascimento"  class="form-control">
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="senha" class="form-label">Senha</label>
+                        <div class="input-group">
+                            <input type="password" name="senha"  id="senha" class="form-control">
+                            <button  type="button" id="toggleSenha" class="btn btn-outline-secondary">
+                                <i class="fa fa-eye-slash"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="senha" class="form-label">Confirmar Senha</label>
+                        <div class="input-group">
+                            <input type="password" name="senha" id="senha" class="form-control">
+                            <button type="button" id="toggleConfirmarSenha"  class="btn btn-outline-secondary">
+                                <i class="fa fa-eye-slash"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Cadastrar</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
-</div>
+    
 </main>
 
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/includes/rodape.php"; ?>

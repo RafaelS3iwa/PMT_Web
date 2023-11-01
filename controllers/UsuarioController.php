@@ -1,10 +1,12 @@
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/models/Usuarios.php";
+<?php 
+    require_once $_SERVER['DOCUMENT_ROOT'] . "/models/Usuarios.php";
 
 class UsuarioController
 {
     private $usuarioModel; 
 
-    public function __construct(){
+    public function __construct()
+    {
         $this->usuarioModel = new Usuario();
     }
     public function listarUsuarios(){
@@ -23,7 +25,7 @@ class UsuarioController
             ];
 
             $this->usuarioModel->cadastrar($dados);
-            header('Location: /admin/index.php'); 
+            header('Location: index.php'); 
             exit; 
         }
     }
