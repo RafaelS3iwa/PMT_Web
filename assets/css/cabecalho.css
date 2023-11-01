@@ -1,0 +1,57 @@
+:root {
+    --primaria: #6109AC;
+    --primaria2: #44007E;
+    --secundaria: #FFFF41;
+    --secundaria2: #FFFF97;
+    --laranja: #FFA452;
+    --texto: #FFFFFF;
+}
+.container {
+    max-width: 1660px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+#logo {
+    flex: 1;
+  text-align: left;
+}
+
+#menu ul{
+    flex: 1;
+    text-align: left;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+}
+
+#menu ul li{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#menu ul a{
+    color: var(--texto);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.botao1 {
+    background-color: #6109AC;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    align-items: flex-end;
+}
+
+.links{
+    text-decoration: none;
+}
+
+#botaoCadastro{
+    flex: 1;
+    text-align: right;  
+}
