@@ -35,14 +35,22 @@ class UsuarioController
             $email = $_POST['email']; 
             $senha = $_POST['senha'];
 
-            $usuario = Usuario::autenticarLogin($email, $senha);
-            if ($usuario){ 
-                session_start(); 
-                $_SESSION['id_usuario'] = $usuario->id;
-                header("Location: page.php"); 
+            if(empty($email)){
+                header("Location: login.php?error=E-mail é obrigatório."); 
+                exit();
+            }else if(empty($senha)){
+                header("Location: login.php?error=A senha é obrigatória.");
+                exit();
             }else{
-                echo "E-mail ou senha inválidos"; 
-                header("Location: login.php"); 
+                $usuario = Usuario::autenticarLogin($email, $senha);
+                if ($usuario){ 
+                    session_start(); 
+                    $_SESSION['id_usuario'] = $usuario->id;
+                    header("Location: page.php"); 
+                }else{
+                    echo "E-mail ou senha inválidos"; 
+                    header("Location: login.php"); 
+                }
             }
         }
     }

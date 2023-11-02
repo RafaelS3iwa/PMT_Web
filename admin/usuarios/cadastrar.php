@@ -1,7 +1,8 @@
 <?php 
     require_once $_SERVER['DOCUMENT_ROOT'] . "/includes/cabecalho.php"; 
     require_once $_SERVER['DOCUMENT_ROOT'] ."/controllers/UsuarioController.php";
-
+    include_once $_SERVER['DOCUMENT_ROOT'] . "/includes/alerta.php";
+    
     $usuarioController = new UsuarioController();
     $usuarioController->cadastrarUsuario();
 ?>
@@ -64,7 +65,7 @@ $(document).ready(function () {
 
                     <div class="col-md-4">
                         <label for="nome_social" class="form-label">Nome Social</label>
-                        <input type="text" name="nome_social"  id="nome_social" class="form-control" required>
+                        <input type="text" name="nome_social"  id="nome_social" class="form-control">
                     </div>
 
                     <div class="col-md-4">
