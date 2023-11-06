@@ -20,7 +20,6 @@ require_once $_SERVER["DOCUMENT_ROOT"] ."/controllers/UsuarioController.php";
               <img class="quadrado" src="/assets/img/fundo roxo.png" />
             </div>
             <div class="overlap-group-2">
-              <img class="subtract" src="img/subtract-2.svg" />
               <p class="primeiros-passos">Primeiros Passos como Usuário;<br />Primeiros Passos como Empresa;</p>
             </div>
   </div>
