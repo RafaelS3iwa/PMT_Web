@@ -20,7 +20,7 @@
             <li><a href="#">Sobre</a></li>
             <li><a href="#">Contato</a></li>
             <li><a href="/admin/usuarios/cadastrar.php">Cadastro</a></li>
-            <li><a href="#">Login</a></li>
+            <li><a href="/admin/usuarios/login.php">Login</a></li>
         </ul>
         <nav id="botaoCadastro">
             <button class="botao1">Cadastro</button>
