@@ -7,39 +7,8 @@
     $usuarioController->cadastrarUsuario();
 ?>
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-<!-- Adicione o código JavaScript/jQuery aqui -->
-<script>
-$(document).ready(function () {
-    $("#toggleSenha").click(function () {
-        var senhaInput = $("#inputsenha");
-        var tipoInput = senhaInput.attr("type");
 
-        if (tipoInput === "password") {
-            senhaInput.attr("type", "text");
-            $("#toggleSenha i").removeClass("fa-eye-slash").addClass("fa-eye");
-        } else {
-            senhaInput.attr("type", "password");
-            $("#toggleSenha i").removeClass("fa-eye").addClass("fa-eye-slash");
-        }
-    });
-
-    $("#toggleConfirmarSenha").click(function () {
-        var confirmarSenhaInput = $("#inputConfirmarSenha");
-        var tipoInput = confirmarSenhaInput.attr("type");
-
-        if (tipoInput === "password") {
-            confirmarSenhaInput.attr("type", "text");
-            $("#toggleConfirmarSenha i").removeClass("fa-eye-slash").addClass("fa-eye");
-        } else {
-            confirmarSenhaInput.attr("type", "password");
-            $("#toggleConfirmarSenha i").removeClass("fa-eye").addClass("fa-eye-slash");
-        }
-    });
-});
-</script>
 
 <main class="container mt-3 mb-3" >
     <h1 style="color: white;">Cadastro</h1>

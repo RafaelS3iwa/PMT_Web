@@ -14,11 +14,13 @@
         <div class="logo">
             <h1><img src="/assets/img/Logo PMT true.png" alt="Logo PMT" class="logo-img">
         </div>
-        <ul id="menu" class="menu-list">
+        <ul id="menu">
             <li><a href="#">Empresas</a></li>
             <li><a href="#">Informações</a></li>
             <li><a href="#">Sobre</a></li>
             <li><a href="#">Contato</a></li>
+            <li><a href="/admin/usuarios/cadastrar.php">Cadastro</a></li>
+            <li><a href="#">Login</a></li>
         </ul>
         <nav id="botaoCadastro">
             <button class="botao1">Cadastro</button>
