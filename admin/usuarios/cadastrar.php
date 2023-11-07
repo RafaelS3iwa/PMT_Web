@@ -7,9 +7,6 @@
     $usuarioController->cadastrarUsuario();
 ?>
 
-
-
-
 <main class="container mt-3 mb-3" >
     <h1 style="color: white;">Cadastro</h1>
 
