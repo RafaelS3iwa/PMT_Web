@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/assets/css/Banner1.css">
     <link rel="stylesheet" href="/assets/css/cabecalho.css">
     <link rel="stylesheet" href="/assets/css/rodape.css">
+    <link rel="stylesheet" href="/asset/css/styleHome.css">
     <title>PMT</title>
 </head>
 

@@ -12,16 +12,7 @@
 .footer{
     background-color: black;
     color: var(--texto);
-    display:flex;
     padding: 10px;
     position: absolute;
     bottom: 0;
-    margin:auto;
 }
-
-/*.container-footer{
-    max-width: 1694px;
-    background-color: #000000;
-    margin: auto;
-    position: absolute; 
-}*/

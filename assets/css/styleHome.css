@@ -28,6 +28,16 @@
     color: #FFFF97;
 }
 
-.quadrado{
-    height: auto;
+#banner {
+    background-image: url("../img/fundo\ roxo.png");
+    height: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+#banner p {
+    margin: 20px;
 }
