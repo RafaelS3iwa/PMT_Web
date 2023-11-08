@@ -1,26 +1,33 @@
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/includes/cabecalho.php"; ?>
 
-<form action="index.php" method="get">
-    <input type="radio" name="formType" value="usuario" id="usuario" onchange="this.form.submit()" <?php if (isset($_GET['formType']) && $_GET['formType'] === 'usuario') echo 'checked'; ?>>
-    <label for="usuario">Cadastro de Usuário</label>
-    
-    <input type="radio" name="formType" value="empresa" id="empresa" onchange="this.form.submit()" <?php if (isset($_GET['formType']) && $_GET['formType'] === 'empresa') echo 'checked'; ?>>
-    <label for="empresa">Cadastro de Empresa</label>
-</form>
+<div id="escolhaCadastro">
+    <form action="index.php" method="post">
+        <input type="radio" name="formType" value="usuario" id="usuario">
+        <label for="usuario">Cadastro de Usuário</label>
+
+        <input type="radio" name="formType" value="empresa" id="empresa">
+        <label for="empresa">Cadastro de Empresa</label>
+    </form>
+</div>
+
+<script>
+document.querySelector("form").addEventListener("click", function(event) {
+    if (event.target.id === "usuario") {
+        fetch('usuarios/cadastrar.php?formType=usuario')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("mainContent").innerHTML = data;
+            });
+    } else if (event.target.id === "empresa") {
+        fetch('empresas/cadastrar.php?formType=empresa')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("mainContent").innerHTML = data;
+            });
+    }
+});
+</script>
 
 <?php
-if (!isset($_GET['formType'])) {
-    $_GET['formType'] = 'usuario';
-}
-
-if (isset($_GET['formType'])) {
-    $formType = $_GET['formType'];
-    if ($formType === 'usuario') {
-        require_once $_SERVER['DOCUMENT_ROOT'] . "/admin/usuarios/cadastrar.php";
-    } elseif ($formType === 'empresa') {
-        require_once $_SERVER['DOCUMENT_ROOT'] . "/admin/empresas/cadastrar.php";
-    }
-}
-
-require_once $_SERVER['DOCUMENT_ROOT'] . "/includes/rodape.php";
+    require_once $_SERVER['DOCUMENT_ROOT'] . "/includes/rodape.php";
 ?>

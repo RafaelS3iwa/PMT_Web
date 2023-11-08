@@ -1,5 +1,4 @@
 <?php 
-    require_once $_SERVER['DOCUMENT_ROOT'] . "/includes/cabecalho.php"; 
     require_once $_SERVER['DOCUMENT_ROOT'] ."/controllers/UsuarioController.php";
     include_once $_SERVER['DOCUMENT_ROOT'] . "/includes/alerta.php";
     
@@ -55,7 +54,7 @@
                         </div>
                     </div>
                     <div class="col-12">
-                        <button type="submit" class="btn btn-primary">Cadastrar</button>
+                        <button type="submit" value="Cadastrar">Cadastrar</button>  
                         <a href="index.php" class="btn btn-secondary">Cancelar</a>
                     </div>
                 </form>
@@ -64,5 +63,3 @@
     </div>
     
 </main>
-
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/includes/rodape.php"; ?>

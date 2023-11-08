@@ -25,9 +25,10 @@ class UsuarioController
             ];
 
             $this->usuarioModel->cadastrar($dados);
-            header('Location: page.php'); 
+            header('Location: index.php'); 
             exit; 
         }
+
     }
 
     public function loginUsuario(){

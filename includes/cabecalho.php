@@ -12,7 +12,7 @@
 <body>
     <header id="cabecalho" class="container">
         <div class="logo">
-            <h1><img src="/assets/img/Logo PMT true.png" alt="Logo PMT" class="logo-img">
+            <h1><a href="../index.php"><img src="/assets/img/Logo PMT true.png" alt="Logo PMT" class="logo-img"></a>
         </div>
         <ul id="menu">
             <li><a href="#">Empresas</a></li>
