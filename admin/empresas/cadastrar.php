@@ -1,14 +1,15 @@
 <?php 
     require_once $_SERVER['DOCUMENT_ROOT'] . "/includes/cabecalho.php"; 
-    require_once $_SERVER['DOCUMENT_ROOT'] ."/controllers/UsuarioController.php";
+    require_once $_SERVER['DOCUMENT_ROOT'] ."/controllers/EmpresaController.php";
     include_once $_SERVER['DOCUMENT_ROOT'] . "/includes/alerta.php";
     
-    $usuarioController = new UsuarioController();
-    $usuarioController->cadastrarUsuario();
+    $empresaController = new EmpresaController;
+    $empresaController->cadastrarEmpresa();
 ?>
 
 <main class="container mt-3 mb-3" >
-    <h1 style="color: black;">Cadastro</h1>
+
+    <h1 style="color: red;">Cadastro</h1>
 
         <div class="container mt-5">
             <div class="card">
@@ -16,12 +17,12 @@
 
                 <form action="cadastrar.php" method="post" class="row g-3">
                     <div class="col-md-4">
-                        <label for="nome_completo" class="form-label">Nome Completo</label>
+                        <label for="nome_completo" class="form-label">Nome da Empresa</label>
                         <input type="text" name="nome_completo" id="nome_completo" class="form-control" required>
                     </div>
 
                     <div class="col-md-4">
-                        <label for="nome_social" class="form-label">Nome Social</label>
+                        <label for="nome_social" class="form-label">Cu</label>
                         <input type="text" name="nome_social"  id="nome_social" class="form-control">
                     </div>
 
