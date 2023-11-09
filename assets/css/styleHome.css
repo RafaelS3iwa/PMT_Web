@@ -1,3 +1,14 @@
+:root {
+    --primaria: #6109AC;
+    --primaria2: #44007E;
+    --primaria3: #9747FF;
+    --secundaria: #FFFF41;
+    --secundaria2: #FFFF97;
+    --laranja: #FFA452;
+    --texto: #FFFFFF;
+    --rodape: #000000;
+}
+
 /* Estilos para o banner */
 .bannerHome1 {
     display: flex;
@@ -29,7 +40,7 @@
 }
 
 #banner {
-    background-image: url("../img/fundo\ roxo.png");
+    background-image: url("/assets/img/fundoroxo.png");
     height: 300;
     display: flex;
     align-items: center;
@@ -40,4 +51,8 @@
 
 #banner p {
     margin: 20px;
+}
+
+#slogan1 {
+    color: #FFFFFF;
 }

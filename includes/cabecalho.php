@@ -22,8 +22,7 @@
             <li><a href="#">Sobre</a></li>
             <li><a href="#">Contato</a></li>
         </ul>
-        <nav id="botaoCadastro">
-            <button class="botao1">Cadastro</button>
-            <button class="botao2">Login</button>
-        </nav>
+        <div id="botaoCadastro">
+            <img src="/assets/img/icone-usuario.png" alt="Cadastro">
+        </div>
     </header>
