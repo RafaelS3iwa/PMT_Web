@@ -1,7 +1,5 @@
 <?php 
-    require_once $_SERVER['DOCUMENT_ROOT'] . "/includes/cabecalho.php"; 
     require_once $_SERVER['DOCUMENT_ROOT'] ."/controllers/EmpresaController.php";
-    include_once $_SERVER['DOCUMENT_ROOT'] . "/includes/alerta.php";
     
     $empresaController = new EmpresaController;
     $empresaController->cadastrarEmpresa();
@@ -9,31 +7,36 @@
 
 <main class="container mt-3 mb-3" >
 
-    <h1 style="color: red;">Cadastro</h1>
+    <h1 style="color: black;">Cadastro</h1>
 
         <div class="container mt-5">
             <div class="card">
                 <div class="card-body">
 
-                <form action="cadastrar.php" method="post" class="row g-3">
+                <form action="/empresas/cadastrar.php" method="post" class="row g-3">
                     <div class="col-md-4">
-                        <label for="nome_completo" class="form-label">Nome da Empresa</label>
-                        <input type="text" name="nome_completo" id="nome_completo" class="form-control" required>
+                        <label for="nome_empresa" class="form-label">Nome da Empresa</label>
+                        <input type="text" name="nome_empresa" id="nome_empresa" class="form-control" required>
                     </div>
 
                     <div class="col-md-4">
-                        <label for="nome_social" class="form-label">Cu</label>
-                        <input type="text" name="nome_social"  id="nome_social" class="form-control">
+                        <label for="cnpj" class="form-label">CNPJ</label>
+                        <input type="text" name="cnpj"  id="cnpj" class="form-control">
                     </div>
 
                     <div class="col-md-4">
-                        <label for="data_nascimento" class="form-label">Data de Nascimento</label>
-                        <input type="date" name="data_nascimento" id="data_nascimento"  class="form-control" required>
+                        <label for="data_abertura" class="form-label">Data de Abertura</label>
+                        <input type="date" name="data_abertura" id="data_abertura"  class="form-control" required>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="responsavel_legal" class="form-label">Responsavel Legal</label>
+                        <input type="text" name="responsavel_legal"  id="responsavel_legal" class="form-control">
                     </div>
 
                     <div class="col-md-12">
-                        <label for="email" class="form-label">E-mail</label>
-                        <input type="email" name="email"  id="email" class="form-control" required>
+                        <label for="email_corporativo" class="form-label">E-mail</label>
+                        <input type="email_corporativo" name="email_corporativo"  id="email_corporativo" class="form-control" required>
                     </div>
 
                     <div class="col-md-6">
@@ -56,7 +59,7 @@
                         </div>
                     </div>
                     <div class="col-12">
-                        <button type="submit" value="Cadastrar">Cadastrar</button>
+                        <button type="submit">Cadastrar</button>
                         <a href="index.php" class="btn btn-secondary">Cancelar</a>
                     </div>
                 </form>
@@ -65,5 +68,3 @@
     </div>
     
 </main>
-
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/includes/rodape.php"; ?>

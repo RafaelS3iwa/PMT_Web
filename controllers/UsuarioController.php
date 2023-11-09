@@ -47,10 +47,10 @@ class UsuarioController
                 if ($usuario){ 
                     session_start(); 
                     $_SESSION['id_usuario'] = $usuario->id;
-                    header("Location: page.php"); 
+                    header("Location: index.php"); 
                 }else{
                     echo "E-mail ou senha inválidos"; 
-                    header("Location: login.php"); 
+                    header("Location: index.php"); 
                 }
             }
         }

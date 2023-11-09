@@ -1,6 +1,5 @@
 <?php 
     require_once $_SERVER['DOCUMENT_ROOT'] ."/controllers/UsuarioController.php";
-    include_once $_SERVER['DOCUMENT_ROOT'] . "/includes/alerta.php";
     
     $usuarioController = new UsuarioController();
     $usuarioController->cadastrarUsuario();
@@ -13,7 +12,7 @@
             <div class="card">
                 <div class="card-body">
 
-                <form action="cadastrar.php" method="post" class="row g-3">
+                <form action="/admin/usuarios/cadastrar.php" method="post" class="row g-3">
                     <div class="col-md-4">
                         <label for="nome_completo" class="form-label">Nome Completo</label>
                         <input type="text" name="nome_completo" id="nome_completo" class="form-control" required>
@@ -54,7 +53,7 @@
                         </div>
                     </div>
                     <div class="col-12">
-                        <button type="submit" value="Cadastrar">Cadastrar</button>  
+                        <button type="submit">Cadastrar</button>
                         <a href="index.php" class="btn btn-secondary">Cancelar</a>
                     </div>
                 </form>
