@@ -1,4 +1,4 @@
-:root{
+:root {
     --primaria: #6109AC;
     --primaria2: #44007E;
     --primaria3: #C494EE;
@@ -8,18 +8,28 @@
     --texto: #FFFFFF;
 }
 
-*{
+* {
     background-color: var(--primaria)
 }
 
-.texto-encontre{
+#class-slogan .slogan1 {
     color: var(--texto);
+    font-size: 50px;
 }
 
-.texto-conquiste{
+#class-slogan .slogan2 {
     color: var(--texto);
+    font-size: 60px;
 }
 
-.texto-triunfe{
+#class-slogan .slogan3 {
     color: var(--secundaria);
+    font-size: 70px;
 }
+
+.logotrofeu img {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
