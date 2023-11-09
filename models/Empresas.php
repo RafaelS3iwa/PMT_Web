@@ -30,6 +30,7 @@
                 return true;
             }catch(PDOException $e){
                 echo 'Erro ao inserir os dados: ' . $e->getMessage();
+                return false;
             }
         }
 

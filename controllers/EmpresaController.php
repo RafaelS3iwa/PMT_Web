@@ -3,19 +3,19 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/models/Empresas.php";
 
 class EmpresaController
 {
-    private $empresaController;
+    private $empresaModel;
 
     public function __construct()
     {
-        $this->empresaController = new Empresa;
+        $this->empresaModel = new Empresa();
     }
 
     public function listarEmpresas(){
-        return $this->empresaController->listar();
+        return $this->empresaModel->listar();
     }
 
     public function cadastrarEmpresa(){
-        if($_SERVER['REQUEST_METHOD'] === "POST"){
+        if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
             $dados = [
                 'nome_empresa' => $_POST['nome_empresa'],
@@ -26,8 +26,9 @@ class EmpresaController
                 'senha' => password_hash($_POST['senha'], PASSWORD_DEFAULT)
             ]; 
 
-            $this->empresaController->cadastrar($dados); 
+            $this->empresaModel->cadastrar($dados); 
             header('Location: index.php'); 
+            exit;
         }
     }
 }

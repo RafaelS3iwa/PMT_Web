@@ -13,7 +13,7 @@
             <div class="card">
                 <div class="card-body">
 
-                <form action="/empresas/cadastrar.php" method="post" class="row g-3">
+                <form action="/admin/empresas/cadastrar.php" method="post" class="row g-3">
                     <div class="col-md-4">
                         <label for="nome_empresa" class="form-label">Nome da Empresa</label>
                         <input type="text" name="nome_empresa" id="nome_empresa" class="form-control" required>
@@ -21,7 +21,7 @@
 
                     <div class="col-md-4">
                         <label for="cnpj" class="form-label">CNPJ</label>
-                        <input type="text" name="cnpj"  id="cnpj" class="form-control">
+                        <input type="text" name="cnpj"  id="cnpj" class="form-control" required>
                     </div>
 
                     <div class="col-md-4">
@@ -31,12 +31,12 @@
 
                     <div class="col-md-4">
                         <label for="responsavel_legal" class="form-label">Responsavel Legal</label>
-                        <input type="text" name="responsavel_legal"  id="responsavel_legal" class="form-control">
+                        <input type="text" name="responsavel_legal"  id="responsavel_legal" class="form-control" required>
                     </div>
 
                     <div class="col-md-12">
                         <label for="email_corporativo" class="form-label">E-mail</label>
-                        <input type="email_corporativo" name="email_corporativo"  id="email_corporativo" class="form-control" required>
+                        <input type="email" name="email_corporativo"  id="email_corporativo" class="form-control" required>
                     </div>
 
                     <div class="col-md-6">
