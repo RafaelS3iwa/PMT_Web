@@ -20,16 +20,4 @@
     <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/admin/empresas/login.php";?>
 </div>
 
-<script>
-document.querySelector("form").addEventListener("change", function(event) {
-    if (event.target.id === "usuario") {
-        document.getElementById("usuarioForm").style.display = "block";
-        document.getElementById("empresaForm").style.display = "none";
-    } else if (event.target.id === "empresa") {
-        document.getElementById("usuarioForm").style.display = "none";
-        document.getElementById("empresaForm").style.display = "block";
-    }
-});
-</script>
-
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/includes/rodape.php"; ?>
