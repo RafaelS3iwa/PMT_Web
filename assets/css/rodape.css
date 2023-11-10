@@ -12,8 +12,6 @@
 .footer{
     background-color: black;
     color: var(--texto);
-    padding: 10px;
-    position: absolute;
-    bottom: 0;
+    padding: 17px;
 }
 

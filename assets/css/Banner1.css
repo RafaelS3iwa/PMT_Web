@@ -14,22 +14,22 @@
 
 #class-slogan .slogan1 {
     color: var(--texto);
-    font-size: 50px;
+    font-size: 40px;
 }
 
 #class-slogan .slogan2 {
     color: var(--texto);
-    font-size: 60px;
+    font-size: 50px;
 }
 
 #class-slogan .slogan3 {
     color: var(--secundaria);
-    font-size: 70px;
+    font-size: 80px;
 }
 
-.logotrofeu img {
+#logotrofeu .trofeu{
     display: flex;
-    padding-left: 100px;
-
+    position: absolute;
+    bottom: 250px;
+    left: 1250px;
 }
-

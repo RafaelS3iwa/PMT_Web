@@ -12,17 +12,19 @@
 </head>
 
 <body>
-    <header id="cabecalho" class="container">
-        <div class="logo">
-            <h1><img src="/assets/img/Logo PMT true.png" alt="Logo PMT" class="logo-img">
-        </div>
-        <ul id="menu" class="menu-list">
-            <li><a href="#">Empresas</a></li>
-            <li><a href="#">Informações</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Contato</a></li>
-        </ul>
-        <div id="botaoCadastro">
-            <img src="/assets/img/icone-usuario.png" alt="Cadastro">
-        </div>
-    </header>
+    <div class="barra-topo">
+        <header id="cabecalho" class="container">
+            <div class="logo">
+                <h1><img src="/assets/img/Logo PMT true.png" alt="Logo PMT" class="logo-img">
+            </div>
+            <ul id="menu" class="menu-list">
+                <li><a href="#">Empresas</a></li>
+                <li><a href="#">Informações</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+            <div id="botaoCadastro">
+                <img src="/assets/img/icone-usuario.png" alt="Cadastro">
+            </div>
+        </header>
+    </div>
