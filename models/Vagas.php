@@ -1,13 +1,13 @@
 <?php
     require_once $_SERVER['DOCUMENT_ROOT'] . "/database/DBConexao.php";
 
-    class Candidatos{
+    class Vagas{
 
         protected $db; 
-        protected $table = "candidatos"; 
+        protected $table = "vagas"; 
 
         public function __construct()
         {
-            $this->db = DBConexao::getConexao();
+            $this->db = DBConexao::getConexao(); 
         }
     }

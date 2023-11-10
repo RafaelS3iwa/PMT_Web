@@ -2,10 +2,12 @@
     require_once $_SERVER['DOCUMENT_ROOT'] . "/database/DBConexao.php";
 
     class Empresa{
+
         protected $db;
         protected $table="empresas"; 
 
-        public function __construct(){
+        public function __construct()
+        {
             $this->db = DBConexao::getConexao();
         }
 
@@ -44,6 +46,35 @@
             }catch(PDOException $e){
                 echo 'Erro na inserção: ' . $e->getMessage(); 
                 return null; 
+            }
+        }
+
+        
+        public static function autenticarLogin($email, $senha){
+            try{
+                $query = "SELECT id_empresa, email_corporativo, senha FROM empresas WHERE email_corporativo=:email_corporativo ";
+                $conexao = DBConexao::getConexao();
+
+                $stmt = $conexao->prepare($query);
+                $stmt->bindParam(':email_corporativo', $email); 
+                $stmt->execute(); 
+
+                if($stmt->rowCount() === 1){
+                    $empresa = $stmt->fetch(PDO::FETCH_ASSOC);
+                    if(password_verify($senha, $empresa["senha"])){
+                        return $empresa;
+                    }else{
+                        $_SESSION['erro'] = "E-mail ou senha incorretos!"; 
+                        return false; 
+                    }
+                }else{
+                    $_SESSION['erro'] = "E-mail ou senha incorretos!"; 
+                    return false; 
+                }
+                return null; 
+            }catch(PDOException $e){
+                echo "Erro na inserção". $e->getMessage();
+                return false; 
             }
         }
     } 

@@ -1,19 +1,19 @@
 <?php
-    require_once $_SERVER['DOCUMENT_ROOT'] . "/controllers/UsuarioController.php"; 
+    require_once $_SERVER['DOCUMENT_ROOT'] . "/controllers/EmpresaController.php"; 
 
-    $usuarioController = new UsuarioController; 
-    $usuarioController->loginUsuario(); 
+    $empresaController = new EmpresaController();
+    $empresaController->loginEmpresa(); 
 ?>
 
 <main class="container mt-3 mb-3" >
-    <h1>Login Usuário</h1>
-    <form action="/admin/usuarios/login.php" method="post">
+    <h1>Login Empresa</h1>
+    <form action="/admin/empresas/login.php" method="post">
         <?php if (isset($_GET['error'])) { ?>
             <p class="error"><?php echo $_GET['error']?></p>
         <?php } ?>
         <div>
-            <label for="email" class="form-label">E-mail</label>
-            <input type="email" name="email" id="email" class="form-control"></input>
+            <label for="email_corporativo" class="form-label">E-mail</label>
+            <input type="email" name="email_corporativo" id="email_corporativo" class="form-control"></input>
         </div>
         <div>
             <label for="senha" class="form-label">Senha</label>

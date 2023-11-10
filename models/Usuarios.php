@@ -8,7 +8,7 @@ class Usuario {
 
     public function __construct()
     {
-            $this->db = DBConexao::getConexao();
+        $this->db = DBConexao::getConexao();
     }
 
     /**

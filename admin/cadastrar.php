@@ -1,7 +1,7 @@
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/includes/cabecalho.php"; ?>
 
 <div id="escolhaCadastro">
-    <form action="index.php" method="post">
+    <form action="cadastrar.php" method="post">
         <input type="radio" name="formType" value="usuario" id="usuario" checked>
         <label for="usuario">Cadastro de Usuário</label>
 
