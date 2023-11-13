@@ -11,8 +11,7 @@
     <title>PMT</title>  
 </head>
 
-<body>
-    <header id="cabecalho" class="container">
+<header id="cabecalho" class="container">
         <div class="logo">
             <h1><a href="../index.php"><img src="/assets/img/Logo PMT true.png" alt="Logo PMT" class="logo-img"></a>
         </div>
@@ -29,3 +28,6 @@
             <button class="botao2">Login</button>
         </nav>
     </header>
+
+<body id="body">
+   

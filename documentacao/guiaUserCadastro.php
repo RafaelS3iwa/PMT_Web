@@ -1,6 +1,6 @@
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/includes/cabecalho.php" ?>
 
-<main>
+<main class="guiaContainer">
     <div>
         <h1 class="cadastroUsuario">Primeiro Passo: O seu Cadastro</h1>
         <img src="">

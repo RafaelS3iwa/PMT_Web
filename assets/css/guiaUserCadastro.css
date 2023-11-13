@@ -7,6 +7,26 @@
     --texto: #FFFFFF;
 }
 
-*{
-    background-color: var(--primaria);
-}
+.formGuia {
+    width: clamp(1500px, 30%, 430px);
+    border: 1px solid var(--texto);
+    border-radius: 0.35rem;
+    background-color: #FFA452;
+    color: #FFFFFF;
+  }
+  
+  .titulo-guia {
+    color: var(--secundaria2);
+    font-size: 64px;
+    text-align: center;
+  }
+  
+  #imagemLogo {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .guiaContainer {
+    text-align: center;
+  }
