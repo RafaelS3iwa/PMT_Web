@@ -1,0 +1,6 @@
+body {
+  background-image: url('/assets/img/pexels-marek-piwnicki-5913337.jpg'); /* Nome da imagem que você baixou */
+  background-size: 1950px 1150px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
