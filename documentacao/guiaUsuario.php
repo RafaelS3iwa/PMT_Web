@@ -31,7 +31,7 @@
             <div>
                 <h4>Interaja com as Vagas</h4>
                 <img src="">
-                <a href="/documentacao/guiaInteração.php">
+                <a href="/documentacao/guiaInteracao.php">
                     <button type="button">Saiba Mais</button>
                 </a>
             </div>
@@ -50,25 +50,45 @@
             <div>
                 <div>
                     <h4>Criando Sua Conta</h4>
+<<<<<<< HEAD
                     <a href="/documentacao/guiaEmpresaCadastro.php"><img src="">
+=======
+                    <img src="">
+                    <a href="/documentacao/guiaEmpresaCadastro.php">
+>>>>>>> fa797ab6735ce53c13c898a49900cdd322088153
                         <button type="button">Saiba Mais</button>
                     </a>
                 </div>
                 <div>
                     <h4>Criando suas Vagas</h4>
+<<<<<<< HEAD
                     <a href="/documentacao/guiaVagaCadastro.php"><img src="">
+=======
+                    <img src="">
+                    <a href="/documentacao/guiaVagaCadastro.php">
+>>>>>>> fa797ab6735ce53c13c898a49900cdd322088153
                         <button type="button">Saiba Mais</button>
                     </a>
                 </div>
                 <div>
                     <h4>Candidatos Interessados</h4>
+<<<<<<< HEAD
                     <a href="/documentacao/guiaVerCandidatos.php"><img src="">
+=======
+                    <img src="">
+                    <a href="/documentacao/guiaVerCandidatos.php">
+>>>>>>> fa797ab6735ce53c13c898a49900cdd322088153
                         <button type="button">Saiba Mais</button>
                     </a>
                 </div>
                 <div>
                     <h4>Aprovar ou Rejeitar</h4>
+<<<<<<< HEAD
                     <a href="/documentacao/guiaAprovarRejeitar.php"><img src="">
+=======
+                    <img src="">
+                    <a href="/documentacao/guiaAprovarRejeitar.php">
+>>>>>>> fa797ab6735ce53c13c898a49900cdd322088153
                         <button type="button">Saiba Mais</button>
                     </a>
                 </div>
