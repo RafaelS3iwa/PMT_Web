@@ -1,74 +1,40 @@
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/includes/cabecalho.php" ?>
 
 <main>
-    <div>
-        <h1>Criando suas vagas</h1>
-        <img src="/assets/img/">
-        <p> Como Criar uma Vaga de Emprego: Um Tutorial Passo a Passo
-
-            Criar uma vaga de emprego envolve diversos elementos importantes para atrair candidatos qualificados. Vamos
-            guiar você por um processo simples e eficaz para criar uma vaga de emprego completa.
-
-            1. Área de Atuação da Vaga:
-            Comece definindo claramente a área de atuação da vaga. Por exemplo, se você está procurando por um
-            desenvolvedor de software, a área de atuação seria "Desenvolvimento de Software". Seja específico para
-            atrair candidatos com as habilidades certas.
-
-            Exemplo:
-            - Área de Atuação: Desenvolvimento de Software
-
-            2. Informações da Vaga:
-            Forneça informações detalhadas sobre a posição. Descreva as responsabilidades, requisitos e qualquer
-            habilidade específica necessária para o cargo. Seja claro e conciso para que os candidatos possam entender
-            facilmente o que é esperado.
-
-            Exemplo:
-            - Informações da Vaga: Procuramos um desenvolvedor de software para participar do desenvolvimento de
-            projetos inovadores, colaborando com equipes multifuncionais, etc.
-
-            3. Benefícios:
-            Destaque os benefícios que a posição oferece. Isso pode incluir benefícios de saúde, bônus, horário
-            flexível, etc. Isso ajuda a tornar a vaga mais atraente para os candidatos.
-
-            Exemplo:
-            - Benefícios: Oferecemos plano de saúde, vale-refeição, ambiente de trabalho flexível e oportunidades de
-            crescimento profissional.
-
-            4. Horário de Início e Saída:
-            Especifique o horário de trabalho esperado. Se a posição envolver horários flexíveis ou remotos,
-            certifique-se de mencionar isso para atrair um grupo diversificado de candidatos.
-
-            Exemplo:
-            - Horário de Início: 9h00
-            - Horário de Saída: 18h00
-
-            5. Salário:
-            Informe o salário ou a faixa salarial oferecida para a posição. Isso ajuda a filtrar candidatos alinhados
-            com as expectativas financeiras da empresa.
-
-            Exemplo:
-            - Salário: A partir de R$ 5.000,00, negociável com base na experiência.
-
-            Conclusão:
-            Ao seguir esses passos simples, você estará no caminho certo para criar uma vaga de emprego atrativa e
-            informativa. Lembre-se de revisar e ajustar as informações conforme necessário para garantir que a vaga
-            atenda às necessidades específicas da sua empresa.
-
-            Boa sorte na busca pelo candidato ideal!</p>
-    </div>
-
-    <div>
-        <h2>Vamos para o próximo tópico?</h2>
-
-        <h3>Vendos os Candidatos Interessados</h3>
-
-        <img src="">
-        <a href="/documentacao/guiaVerCandidatos.php">
-            <button type="button">Saiba Mais</button>
-        </a>
-
-    </div>
-</main>
-
-
+        <div>
+            <h1>Segundo Passo: Sua Empresa, Suas Vagas, Seu Mundo!</h1>
+            <img src="">
+            <p>Preparado para dar vida a oportunidades que fazem os talentos sonharem acordados? No PMT, o poder está em suas mãos! Vamos mostrar como você pode criar vagas que não apenas preencham espaços, mas também transformem seu ambiente de trabalho. Segure firme, porque criar suas próprias vagas nunca foi tão emocionante!</p>
+                <div>
+                    <h4>Passo 1: Área de Atuação da Vaga:</h4>
+                    <p>Pense nisso como definir o palco para um grande espetáculo. Qual área da sua empresa será o epicentro de inovação e talento?</p>
+                </div>
+                <div>
+                    <h4>Passo 2: Informações da Vaga:</h4>
+                    <p>Desperte a curiosidade! Conte uma história sobre a vaga. Descreva as responsabilidades como se estivesse pintando um quadro emocionante.</p>
+                </div>
+                <div>
+                    <h4>Passo 3: Benefícios:</h4>
+                    <p>Vamos tornar essa oportunidade irresistível! Quais benefícios tornam sua empresa um lugar único e incrível para trabalhar? Deixe os candidatos sonhando com o que os espera.</p>
+                </div>
+                <div>
+                    <h4>Passo 4: Horário de Início e Saída:</h4>
+                    <p>Defina o ritmo. Seja claro sobre os horários, mas faça isso de uma maneira que mostre que sua empresa valoriza um equilíbrio saudável entre trabalho e vida pessoal.</p>
+                </div>
+                <div>
+                    <h4>Passo 5: Salário::</h4>
+                    <p>Este é o clímax! Mostre o valor que sua empresa atribui ao talento. Seja justo, seja atraente. Faça os olhos dos candidatos brilharem ao verem o que os aguarda.</p>
+                </div>
+                <div>
+                    <h3>Vamos para o Próximo Tópico??</h3>
+                    <div>
+                    <h4>2.Vendos os Candidatos Interessados</h4>
+                    <img src="">
+                    <a href="/documentacao/guiaVerCandidatos.php">
+                        <button type="button">Saiba Mais</button>
+                    </a>
+                </div>
+                </div>
+        </div>
+    <main>
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/includes/rodape.php" ?>

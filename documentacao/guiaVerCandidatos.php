@@ -1,66 +1,34 @@
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/includes/cabecalho.php" ?>
 
+
 <main>
-    <div>
-        <h1>Visualizando os Candidatos Interessados</h1>
-        <img src="/assets/img/">
-        <p> Como Visualizar Candidatos Interessados: Um Guia Passo a Passo
-
-            Visualizar candidatos interessados em uma vaga é uma parte crucial do processo de recrutamento. Vamos
-            simplificar esse processo com um tutorial fácil de seguir.
-
-            1. Acesse a Plataforma:
-            - Abra o navegador e acesse a plataforma de recrutamento onde a vaga foi publicada.
-
-            2. Faça Login:
-            - Faça login na sua conta de recrutador ou administrador.
-
-            3. Encontre a Vaga:
-            - Localize a vaga específica para a qual deseja ver os candidatos interessados. Geralmente, elas estarão
-            listadas no seu painel principal.
-
-            4. Clique em "Candidatos":
-            - Dentro da página da vaga, procure a opção "Candidatos" ou algo semelhante. Geralmente, essa opção está
-            localizada perto da descrição da vaga.
-
-            5. Selecione "Interessados":
-            - Dentro da seção de candidatos, haverá diferentes categorias, como "Currículos Recebidos", "Entrevistados"
-            e assim por diante. Clique em "Interessados" para ver os candidatos que mostraram interesse na vaga.
-
-            6. Detalhes do Candidato:
-            - Ao clicar em "Interessados", você será direcionado para uma lista dos candidatos que demonstraram
-            interesse. Clique no nome de um candidato para ver mais detalhes, como seu currículo, carta de apresentação
-            e informações de contato.
-
-            7. Opções Adicionais:
-            - Dependendo da plataforma, você pode ter opções adicionais, como agendar entrevistas, enviar mensagens aos
-            candidatos, etc. Explore essas opções para gerenciar eficientemente o processo de recrutamento.
-
-            8. Volte à Lista:
-            - Após revisar as informações de um candidato, utilize a opção de retorno à lista para explorar outros
-            perfis.
-
-            9. Repita conforme Necessário:
-            - Repita o processo conforme necessário para examinar todos os candidatos interessados na vaga.
-
-            Conclusão:
-            Visualizar candidatos interessados é uma parte vital do recrutamento. Ao seguir esses passos simples, você
-            poderá acessar facilmente os perfis dos candidatos e avançar no processo seletivo.
-
-            Boa sorte na busca pelo candidato ideal para a sua vaga!</p>
-    </div>
-
-    <div>
-        <h2>Vamos para o próximo tópico?</h2>
-
-        <h3>Aprovar ou Rejeitar</h3>
-
-        <img src="">
-        <a href="/documentacao/guiaAprovarRejeitar.php">
-            <button type="button">Saiba Mais</button>
-        </a>
-
-    </div>
-</main>
+            <div>
+                <h1>Terceiro Passo: Ver os Candidatos Interessados</h1>
+                <img src="">
+                <p>No PMT, queremos que você tenha uma visão clara e abrangente dos talentos que estão interessados em fazer parte da sua equipe extraordinária. Imagine ter o poder de ver todos os candidatos que se apaixonaram por suas oportunidades em um único lugar. Prepare-se para a magia da mecânica de visão de candidatos do PMT</p>
+                    <div>
+                        <h4>Passo 1: Dashboard Intuitivo:</h4>
+                        <p>Ao fazer login no seu Dashboard PMT, você encontrará uma visão geral elegante e intuitiva. É aqui que a mágica acontece.</p>
+                    </div>
+                    <div>
+                        <h4>Passo 2: Vagas e Candidatos em Destaque:</h4>
+                        <p>Cada vaga que você criou será destacada, com a lista de candidatos que expressaram interesse logo ao lado. Tudo em um único local, para máxima conveniência.</p>
+                    </div>
+                    <div>
+                        <h4>Passo 3: Detalhes Personalizados:</h4>
+                        <p>Clique em qualquer vaga para explorar detalhes mais aprofundados. Veja quem está por trás do interesse e descubra mais sobre o potencial que aguarda sua empresa.</p>
+                    </div>
+                    <div>
+                        <h3>Vamos para o Próximo Tópico??</h3>
+                        <div>
+                        <h4>4.Aceitar ou Rejeitar os Candidatos</h4>
+                        <img src="">
+                        <a href="/documentacao/guiaAprovarRejeitar.php">
+                            <button type="button">Saiba Mais</button>
+                        </a>
+                    </div>
+                    </div>
+            </div>
+        <main>
 
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/includes/rodape.php" ?>
