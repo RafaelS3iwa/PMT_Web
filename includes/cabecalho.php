@@ -19,7 +19,7 @@
             <li><a href="#">Empresas</a></li>
             <li><a href="#">Informações</a></li>
             <li><a href="#">Sobre</a></li>
-            <li><a href="/guiaUsuario.php">Contato</a></li>
+            <li><a href="/documentacao/guiaUsuario.php">Contato</a></li>
             <li><a href="/admin/cadastrar.php">Cadastro</a></li>
             <li><a href="/admin/login.php">Login</a></li>
         </ul>

@@ -15,7 +15,7 @@
             <div>
                 <h4>Criando sua Conta</h4>
                 <img src=""></a>
-                <a href="/guiaUserCadastro.php">
+                <a href="/documentacao/guiaUserCadastro.php">
                     <button type="button">Saiba Mais</button>
                 </a>
             </div>
@@ -23,7 +23,7 @@
             <div>
                 <h4>Se tornando Candidato</h4>
                 <img src="">
-                <a href="/guiaCandidatoCadastro.php">
+                <a href="/documentacao/guiaCandidatoCadastro.php">
                     <button type="button">Saiba Mais</button>
                 </a>
             </div>
@@ -31,7 +31,7 @@
             <div>
                 <h4>Interaja com as Vagas</h4>
                 <img src="">
-                <a href="/guiaInteração.php">
+                <a href="/documentacao/guiaInteracao.php">
                     <button type="button">Saiba Mais</button>
                 </a>
             </div>
@@ -39,7 +39,7 @@
             <div>
                 <h4>Encontre, Conquiste, Triunfe</h4>
                 <img src="">
-                <a href="/guiaUserFinal.php">
+                <a href="/documentacao/guiaUserFinal.php">
                     <button type="button">Saiba Mais</button>
                 </a>
             </div>
@@ -50,25 +50,29 @@
             <div>
                 <div>
                     <h4>Criando Sua Conta</h4>
-                    <a href="/guiaEmpresaCadastro.php"><img src="">
+                    <img src="">
+                    <a href="/documentacao/guiaEmpresaCadastro.php">
                         <button type="button">Saiba Mais</button>
                     </a>
                 </div>
                 <div>
                     <h4>Criando suas Vagas</h4>
-                    <a href="/guiaVagaCadastro.php"><img src="">
+                    <img src="">
+                    <a href="/documentacao/guiaVagaCadastro.php">
                         <button type="button">Saiba Mais</button>
                     </a>
                 </div>
                 <div>
                     <h4>Candidatos Interessados</h4>
-                    <a href="/guiaVerCandidatos.php"><img src="">
+                    <img src="">
+                    <a href="/documentacao/guiaVerCandidatos.php">
                         <button type="button">Saiba Mais</button>
                     </a>
                 </div>
                 <div>
                     <h4>Aprovar ou Rejeitar</h4>
-                    <a href="/guiaAprovarRejeitar.php"><img src="">
+                    <img src="">
+                    <a href="/documentacao/guiaAprovarRejeitar.php">
                         <button type="button">Saiba Mais</button>
                     </a>
                 </div>
