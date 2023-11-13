@@ -12,10 +12,10 @@
         }
 
         /**
-     * Cadastrar Usuário
-     * @param array $dados
-     * @return bool 
-     */
+         * Cadastrar Empresa
+         * @param array $dados
+         * @return bool 
+         */
         public function cadastrar($dados){
             try{
                 $query = "INSERT INTO {$this->table} (nome_empresa, cnpj, data_abertura, responsavel_legal, email_corporativo, senha) VALUES (:nome_empresa, :cnpj, :data_abertura, :responsavel_legal, :email_corporativo, :senha)";

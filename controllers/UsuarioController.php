@@ -50,7 +50,7 @@ class UsuarioController
                     header("Location: index.php"); 
                 }else{
                     echo "E-mail ou senha inválidos"; 
-                    header("Location: index.php"); 
+                    header("Location: login.php"); 
                 }
             }
         }

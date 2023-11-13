@@ -9,6 +9,7 @@
             <a href="cadastrar.php" class ="btn btn-primary float-end">Cadastrar</a>
         </h1>
 
+        <button><a href="/admin/candidatos/cadastrar.php">Cadastrar</a></button>
         <table class="table table-striped">
             <thead>
                 <tr>

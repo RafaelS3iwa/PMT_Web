@@ -1,0 +1,22 @@
+.etapa{
+    background-color: white;
+    border: 1px solid #333;
+    border-radius: .5rem;
+    padding: .5rem;
+    display: none;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    gap: .25rem
+}
+
+.form-group label{
+    font-weight: bold;
+    font-size: .8em;
+}
+
+.etapa.ativa{
+    display: block;
+}

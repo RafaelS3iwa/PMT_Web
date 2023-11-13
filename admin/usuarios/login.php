@@ -22,7 +22,7 @@
 
         <div class="col-12">
             <button type="submit" class="btn btn-primary">Confirmar</button>
-            <a href="index.php" class="btn btn-secondary">Cancelar</a>
+            <a href="login.php" class="btn btn-secondary">Cancelar</a>
         </div>
     </form>
 </main>

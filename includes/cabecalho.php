@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/Banner1.css">
     <link rel="stylesheet" href="/assets/css/cabecalho.css">
+    <link rel="stylesheet" href="/assets/css/candidatos.css">
     <title>PMT</title>
 </head>
 
@@ -18,7 +19,7 @@
             <li><a href="#">Empresas</a></li>
             <li><a href="#">Informações</a></li>
             <li><a href="#">Sobre</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="/guiaUsuario.php">Contato</a></li>
             <li><a href="/admin/cadastrar.php">Cadastro</a></li>
             <li><a href="/admin/login.php">Login</a></li>
         </ul>
