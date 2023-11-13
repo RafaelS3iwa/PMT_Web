@@ -1,0 +1,12 @@
+:root{
+    --primaria: #6109AC;
+    --primaria2: #44007E;
+    --secundaria: #FFFF41;
+    --secundaria2: #FFFF97;
+    --laranja: #FFA452;
+    --texto: #FFFFFF;
+}
+
+*{
+    background-color: var(--primaria);
+}

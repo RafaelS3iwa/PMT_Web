@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="/assets/css/Banner1.css">
     <link rel="stylesheet" href="/assets/css/cabecalho.css">
     <link rel="stylesheet" href="/assets/css/candidatos.css">
-    <title>PMT</title>
+    <link rel="stylesheet" href="/assets/css/guiaUserCadastro.css">
+    <title>PMT</title>  
 </head>
 
 <body>
