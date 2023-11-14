@@ -9,10 +9,9 @@
     <title>PMT</title>  
 </head>
 
-<body id="body">
-    <div class="barra-topo">
+<body>
+    <div id="barra-topo">
         <header id="cabecalho" class="container">
-
             <div id="logo">
                 <h1><a href="../index.php"><img src="/assets/img/Logo PMT true.png" alt="Logo PMT" height="90"></a></h1>
             </div>
@@ -36,4 +35,3 @@
             </div>
         </header>
     </div>
-   

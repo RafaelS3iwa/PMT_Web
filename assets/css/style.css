@@ -15,37 +15,16 @@
     box-sizing: border-box;
 }
 
-#body{
-    display: flex;
-    justify-content: center;
+body{
     background-color: var(--primaria);
 }
 
-.container {
-    max-width: 1840px;
-    margin: 0 auto;
-    padding: 60px;
-}
-
-.barra-topo{
+#barra-topo{
     position: fixed;
-    width: 100%;
-    z-index: 99999999;
+    z-index: 999999;
     background-color: var(--primaria);
-    display: flex;
-    justify-content: center;
-}
-
-#logo {
-    position:relative;
-    left: 100px;
-}
-
-#logo img {
-    margin-top: 0;
-    margin-right: -90px;
-    margin-left: 70px;
-    padding: 0px;
+    top: 0;
+    width: 100%;
 }
 
 #cabecalho{
@@ -53,11 +32,17 @@
     justify-content: space-between;
     background-color: var(--primaria);
     align-items: center;
-    height: 50px;
-    position: fixed;
-    width: 100%;
-    z-index: 999999;
+    height: 110px;
 }
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 #menu ul{
     display: flex;
     list-style: none;
@@ -77,7 +62,6 @@
 
 #botaoTopo{
     position:relative;
-    right: 150px;
     cursor: pointer;
 }
 
@@ -95,7 +79,7 @@
 }
 
 #menuBotao.menuBotao-ativo{
-    right: 500px;
+    right: 375px;
 }
 
 #menuBotao ul {
@@ -118,9 +102,10 @@
 
 /* Padrão da Main */
 main{
-    margin-top: 125px;
+    padding-top: 110px;
 }
 
+/* Forms de Cadastro */
 #escolhaCadastro{
     margin-top: 150px;
 }
@@ -147,11 +132,13 @@ main{
 }
 
 /* Index */
+#banner{
+    position: relative;
+    height: 400px;
+}
 
 #textoSlogan{
-    position: relative;
-    top: 50px;
-    left: 200px;
+    position: absolute;
 
 }
 
@@ -171,17 +158,13 @@ main{
 }
 
 #trofeu{
-    position: relative;
-    left: 750px;
-    right: 0px;
-    bottom: 150px;
+    position: absolute;
     z-index: 999999;
 }
 
 .fundoRoxo{
-    position: relative;
-    bottom: 300px;
-    width: 100%;
+    background-color: var(--primaria2);
+    min-height: 300px;
 
 }
 
@@ -192,7 +175,6 @@ main{
 /* Rodapé */
 
 #rodape {
-    position: fixed;
     bottom: 0;
     width: 100%;
     height: 100px;
@@ -218,9 +200,6 @@ main{
     background-color: black;
     text-align: center;
     padding: 10px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
 }
 
 
