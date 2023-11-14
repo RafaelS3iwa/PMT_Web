@@ -95,7 +95,7 @@ body{
 #menuBotao ul a {
     color: var(--texto);
     font-weight: bold;
-    text-decoration: none;
+    text-decorat    ion: none;
     font-size: 20px;
 }
 
@@ -139,33 +139,41 @@ main{
 
 #textoSlogan{
     position: absolute;
-
+    left: 90px;
+    top: 40px;
 }
 
 #textoSlogan h3{
-    font-size: 40px;
+    font-size: 35px;
     color: var(--texto);
 }
 
 #textoSlogan h2{
-    font-size: 50px;
+    font-size: 45px;
     color: var(--texto);
 }
 
 #textoSlogan h1{
-    font-size: 75px;
-    color: var(--secundaria2);
+    font-size: 70px;
+    color: var(--secundaria);
 }
 
 #trofeu{
     position: absolute;
-    z-index: 999999;
+    z-index: 9999;
+    right: 0;
+    top: 50px;
+    right: 150px;
 }
 
 .fundoRoxo{
     background-color: var(--primaria2);
-    min-height: 300px;
+    min-height: 700px;
+}
 
+.fundoRoxo h1 {
+    color: var(--secundaria2);
+    font-size: 60px;
 }
 
 .fundoRoxo img{
@@ -173,6 +181,7 @@ main{
     height: 400px;
 }
 
+<<<<<<< HEAD
 
 /* Cadastro */
 .blocoFormRoxo {
@@ -212,6 +221,31 @@ main{
     border: none;
     border-radius: 4px;
     cursor: pointer;
+=======
+#carrossel {
+    margin-top: 70px;
+}
+
+#carouselExampleCaptions{
+    position: relative;
+    top: 100px;
+}
+
+
+.container h2 {
+    color: var(--secundaria2);
+}
+
+.container h3 {
+    color: #FFFFFF;
+}
+
+.box-time{
+    background-image: url(/assets/img/teste.jpg);
+    width: 200px;
+    height: 300px;
+    background-repeat: no-repeat;
+>>>>>>> 465d9c2c0d7c5d109cfcdc179c5f40f4a72f769b
 }
 /* Rodapé */
 
