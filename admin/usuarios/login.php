@@ -8,9 +8,6 @@
 <main class="container mt-3 mb-3" >
     <h1>Login Usuário</h1>
     <form action="/admin/usuarios/login.php" method="post">
-        <?php if (isset($_GET['error'])) { ?>
-            <p class="error"><?php echo $_GET['error']?></p>
-        <?php } ?>
         <div>
             <label for="email" class="form-label">E-mail</label>
             <input type="email" name="email" id="email" class="form-control"></input>
