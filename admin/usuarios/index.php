@@ -1,7 +1,6 @@
 <?php
     require_once $_SERVER['DOCUMENT_ROOT'] . "/includes/cabecalho.php";
     require_once $_SERVER['DOCUMENT_ROOT'] . "/controllers/UsuarioController.php";
-    include_once $_SERVER['DOCUMENT_ROOT'] . "/includes/alerta.php";
 ?>
 
     <main class="container mt-3 mb-3">

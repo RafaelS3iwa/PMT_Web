@@ -4,30 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/Banner1.css">
-    <link rel="stylesheet" href="/assets/css/cabecalho.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/candidatos.css">
-    <link rel="stylesheet" href="/assets/css/guiaUserCadastro.css">
     <title>PMT</title>  
 </head>
 
-<header id="cabecalho" class="container">
-        <div class="logo">
-            <h1><a href="../index.php"><img src="/assets/img/Logo PMT true.png" alt="Logo PMT" class="logo-img"></a>
-        </div>
-        <ul id="menu">
-            <li><a href="#">Empresas</a></li>
-            <li><a href="#">Informações</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="/documentacao/guiaUsuario.php">Contato</a></li>
-            <li><a href="/admin/cadastrar.php">Cadastro</a></li>
-            <li><a href="/admin/login.php">Login</a></li>
-        </ul>
-        <nav id="botaoCadastro">
-            <button class="botao1">Cadastro</button>
-            <button class="botao2">Login</button>
-        </nav>
-    </header>
-
 <body id="body">
+    <div class="barra-topo">
+        <header id="cabecalho" class="container">
+
+            <div id="logo">
+                <h1><a href="../index.php"><img src="/assets/img/Logo PMT true.png" alt="Logo PMT" height="90"></a></h1>
+            </div>
+
+            <nav id="menu">
+                <ul>
+                    <li><a href="#">Informações</a></li>
+                    <li><a href="/documentacao/guiaUsuario.php">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div id="botaoTopo">
+                <img src="/assets/img/icone-usuario.png" height="60" class="botaoUsuario">
+                <nav id="menuBotao">
+                    <ul>
+                        <li><a href="/admin/login.php">Log in</a></li>
+                        <li><a href="/admin/cadastrar.php">Cadastrar</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
    

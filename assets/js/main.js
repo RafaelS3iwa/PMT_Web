@@ -1,5 +1,14 @@
 document.addEventListener("DOMContentLoaded", function() {
- //Troca do formulário de Cadastro
+//Fazer aparecer opções em index.php
+const botaoIndex = document.getElementById('botaoTopo');
+const menu = document.getElementById('menuBotao');
+
+botaoIndex.addEventListener("click" , function(){
+    menu.classList.toggle('menuBotao-ativo');
+})
+
+
+//Troca do formulário de Cadastro
   var escolhaCadastro = document.getElementById('escolhaCadastro');
   if (escolhaCadastro) {
     escolhaCadastro.addEventListener("change", function(event) {
@@ -15,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
     escolhaCadastro = null;
   };
 
-  //Troca do formulário de Login
+//Troca do formulário de Login
   var escolhaLoginElement = document.getElementById("escolhaLogin");
   if (escolhaLoginElement) {
       escolhaLoginElement.addEventListener("change", function(event) {
