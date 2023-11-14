@@ -115,6 +115,14 @@
         <input type="email" name="id_area_interesse" id="id_area_interesse" required>
       </div>
       <div class="form-group">
+        <label for="id_area_interesse2">Quais as áreas que você deseja atuar?</label>
+        <input type="email" name="id_area_interesse2" id="id_area_interesse2" required>
+      </div>
+      <div class="form-group">
+        <label for="id_area_interesse3">Quais as áreas que você deseja atuar?</label>
+        <input type="email" name="id_area_interesse3" id="id_area_interesse3" required>
+      </div>
+      <div class="form-group">
         <label for="estado_civil">Qual o seu Estado Civil?</label>
         <input type="text" name="estado_civil" id="estado_civil" required>
       </div>

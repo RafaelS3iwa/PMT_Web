@@ -18,28 +18,30 @@
          */
         public function cadastrar($dados){
             try{
-                $query = "INSERT INTO {$this->table} (id_usuario, id_area_interesse, cpf, telefone, genero, celular, experiencias, conhecimentos, biografia, escolaridade, nacionalidade, estado_civil, foto, cep, logradouro, bairro, numero, cidade, estado) VALUES (:id_usuario, :id_area_interesse, :cpf, :telefone, :genero, :celular, :experiencias, :conhecimentos, :biografia, :escolaridade, :nacionalidade, :estado_civil, :foto, :cep, :logradouro, :bairro, :numero, :cidade, :estado)"; 
+                $query = "INSERT INTO {$this->table} (id_usuario, foto, genero, cpf, telefone, celular, cep, logradouro, numero, bairro, cidade, estado, biografia, experiencias, conhecimentos, id_area_interesse, id_area_interesse2, id_area_interesse3, estado_civil, nacionalidade, escolaridade) VALUES (:id_usuario, :foto, :genero, :cpf, :telefone, :celular, :cep, :logradouro, :numero, :bairro, :cidade, :estado, :biografia, :experiencias, :conhecimentos, :id_area_interesse, :id_area_interesse2, :id_area_interesse3, :estado_civil, :nacionalidade, :escolaridade)"; 
                 $stmt = $this->db->prepare($query); 
 
                 $stmt->bindParam(':id_usuario', $dados['id_usuario']);
-                $stmt->bindParam(':id_area_interesse', $dados['id_area_interesse']);
+                $stmt->bindParam(':foto', $dados['foto']);
+                $stmt->bindParam(':genero', $dados['genero']);
                 $stmt->bindParam(':cpf', $dados['cpf']);
                 $stmt->bindParam(':telefone', $dados['telefone']);
-                $stmt->bindParam(':genero', $dados['genero']);
                 $stmt->bindParam(':celular', $dados['celular']);
-                $stmt->bindParam(':experiencias', $dados['experiencias']);
-                $stmt->bindParam(':conhecimentos', $dados['conhecimentos']);
-                $stmt->bindParam(':biografia', $dados['biografia']);
-                $stmt->bindParam(':escolaridade', $dados['escolaridade']);
-                $stmt->bindParam(':nacionalidade', $dados['nacionalidade']);
-                $stmt->bindParam(':estado_civil', $dados['estado_civil']);
-                $stmt->bindParam(':foto', $dados['foto']);
                 $stmt->bindParam(':cep', $dados['cep']);
                 $stmt->bindParam(':logradouro', $dados['logradouro']);
-                $stmt->bindParam(':bairro', $dados['bairro']);
                 $stmt->bindParam(':numero', $dados['numero']);
+                $stmt->bindParam(':bairro', $dados['bairro']);
                 $stmt->bindParam(':cidade', $dados['cidade']);
                 $stmt->bindParam(':estado', $dados['estado']);
+                $stmt->bindParam(':biografia', $dados['biografia']);
+                $stmt->bindParam(':experiencias', $dados['experiencias']);
+                $stmt->bindParam(':conhecimentos', $dados['conhecimentos']);
+                $stmt->bindParam(':id_area_interesse', $dados['id_area_interesse']);
+                $stmt->bindParam(':id_area_interesse2', $dados['id_area_interesse2']);
+                $stmt->bindParam(':id_area_interesse3', $dados['id_area_interesse3']);
+                $stmt->bindParam(':estado_civil', $dados['estado_civil']);
+                $stmt->bindParam(':nacionalidade', $dados['nacionalidade']);
+                $stmt->bindParam(':escolaridade', $dados['escolaridade']);
 
                 $stmt->execute();
                 return true;
