@@ -7,7 +7,7 @@ $empresaController->cadastrarEmpresa();
 <main class="cadastro">
     <h1 style="color: black;">Cadastro</h1>
         <div class="container mt-5">
-            <form action="/admin/empresas/cadastrar.php" method="post" class="row g-3">
+            <form action="/admin/empresas/cadastrar.php" method="post" class="estiloForm">
                 <div class="col-md-4">
                     <label for="nome_empresa" class="form-label">Nome da Empresa</label>
                     <input type="text" name="nome_empresa" id="nome_empresa" class="form-control" required>

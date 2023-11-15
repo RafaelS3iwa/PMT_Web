@@ -95,7 +95,7 @@ body{
 #menuBotao ul a {
     color: var(--texto);
     font-weight: bold;
-    text-decorat    ion: none;
+    text-decoration: none;
     font-size: 20px;
 }
 
@@ -181,36 +181,79 @@ main{
     height: 400px;
 }
 
-<<<<<<< HEAD
 
 /* Cadastro */
 .blocoFormRoxo {
     background-color: #44007E;
     border:1px solid #FFA452;
     padding: 20px;
+    width: 1150px;
     border-radius: 30px;
 
 }
+
+.titulo-cadastro{
+    display: flex;
+    justify-content: center;
+    color: var(--secundaria2);
+}
+
+.texto-boas-vindas{
+    display: flex;
+    justify-content: center;
+    color: var(--texto);
+}
+
+.botao-formEscolha{
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.botao-formEscolha label {
+    margin-right: 20px; 
+    font-size: 20px;
+    color: var(--texto);
+}
+
+.botao-formEscolha input {
+    margin-left: 60px; 
+}
+
 .estiloForm {
     max-width: 400px;
     margin: 0 auto;
+    margin-top: -95px;
+    margin-bottom: 45px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
 }
+
+.estiloForm .form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col {
+    margin: 0 10px;     
+}   
 
 .estiloForm label {
     display: block;
     margin-bottom: 8px;
-    color: #FFFFFF;
+    color: var(--secundaria2);
 }
 
 .estiloForm input {
-    width: 100%;
-    padding: 8px;
+    width: 350px;
+    padding: 10px;
     border: 1px solid #FFA452;
     background-color: #44007E;
     margin-bottom: 16px;
     padding: 5px;
     border-radius: 15px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #FFFFFF;
 }
 
@@ -221,32 +264,9 @@ main{
     border: none;
     border-radius: 4px;
     cursor: pointer;
-=======
-#carrossel {
-    margin-top: 70px;
-}
-
-#carouselExampleCaptions{
-    position: relative;
-    top: 100px;
 }
 
 
-.container h2 {
-    color: var(--secundaria2);
-}
-
-.container h3 {
-    color: #FFFFFF;
-}
-
-.box-time{
-    background-image: url(/assets/img/teste.jpg);
-    width: 200px;
-    height: 300px;
-    background-repeat: no-repeat;
->>>>>>> 465d9c2c0d7c5d109cfcdc179c5f40f4a72f769b
-}
 /* Rodapé */
 
 #rodape {
