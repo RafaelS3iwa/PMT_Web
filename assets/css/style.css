@@ -66,10 +66,10 @@ body{
 }
 
 #menuBotao{
-    position: fixed;
+    position: absolute;
     background-color: var(--primaria2);
-    top: 75px;
-    right: -500px;
+    top: 0;
+    left:  0px;
     width: 150px;
     height: 100px;
     z-index: 999999;
@@ -79,7 +79,7 @@ body{
 }
 
 #menuBotao.menuBotao-ativo{
-    right: 375px;
+    left: 0;
 }
 
 #menuBotao ul {

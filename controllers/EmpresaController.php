@@ -52,7 +52,12 @@ class EmpresaController
                 $empresa = Empresa::autenticarLogin($email, $senha);
                 if ($empresa){ 
                     session_start(); 
-                    $_SESSION['id_empresa'] = $empresa->id;
+
+                    $_SESSION['id_empresa'] = $empresa['id_empresa'];
+                    if(isset($empresa['id_empresa'])){
+                        $id_empresa = $empresa['id_empresa']; 
+                        $_SESSION['dados_empresa'] = Empresa::getEmpresaPorID($id_empresa);
+                    }; 
                     header("Location: index.php"); 
                 }else{
                     echo "E-mail ou senha inválidos"; 

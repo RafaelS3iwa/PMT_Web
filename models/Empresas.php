@@ -36,19 +36,27 @@
             }
         }
 
-        public function listar()
-        {
+        public static function getEmpresaPorID($id_empresa){
             try{
-                $query = "SELECT * FROM {$this->table}"; 
-                $stmt = $this->db->query($query); 
-                return $stmt->fetchAll(PDO::FETCH_OBJ);
-                
+                $query = "SELECT * FROM empresas WHERE id_empresa = :id_empresa"; 
+                $conexao = DBConexao::getConexao();
+
+                $stmt = $conexao->prepare($query);
+                $stmt->bindParam(":id_empresa", $id_empresa);
+                $stmt->execute();
+
+                if($stmt->rowCount() === 1){
+                    $empresa = $stmt->fetch(PDO::FETCH_ASSOC);
+                    return $empresa;
+                }else{
+                    throw new Exception('Usuário não encontrado');
+                    return false;
+                }
             }catch(PDOException $e){
                 echo 'Erro na inserção: ' . $e->getMessage(); 
                 return null; 
             }
         }
-
         
         public static function autenticarLogin($email, $senha){
             try{

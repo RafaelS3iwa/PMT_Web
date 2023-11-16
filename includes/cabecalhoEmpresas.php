@@ -1,7 +1,7 @@
 <?php
     session_start();
-    if (isset($_SESSION['dados_usuario'])) {
-        $usuario = $_SESSION['dados_usuario'];
+    if (isset($_SESSION['dados_empresa'])) {
+        $usuario = $_SESSION['dados_empresa'];
     }else {
     echo "Dados do usuário não encontrados na sessão.";
     }
@@ -28,7 +28,7 @@
 
             <div id="grupo-informacoes">
                 <div class="nomeUsuario">
-                    <label><?php echo $usuario['nome_completo']?></label>
+                    <label><?php echo $empresa['nome_empresa']?></label>
                 </div>
                 <div class="principalAreaInteresse">
                     <label>Principal Área Interesse</label>
