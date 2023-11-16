@@ -29,11 +29,9 @@ class Usuario {
             $stmt->bindParam(':senha', $dados['senha']); 
 
             $stmt->execute(); 
-            $_SESSION['sucesso'] = "Seu cadastro foi realizado com sucesso!"; 
             return true;
         }catch(PDOException $e){
             echo 'Erro ao inserir os dados: ' . $e->getMessage();
-            $_SESSION['erro'] = "Não foi possível finalizar seu cadastro. Tente novamente."; 
             return false; 
         }
     }
@@ -57,11 +55,9 @@ class Usuario {
             $stmt->bindParam(':email', $dados['email']); 
 
             $stmt->execute();
-            $_SESSION['sucesso'] = "Suas informações foram atualizadas com sucesso!"; 
             return true; 
         }catch(PDOException $e){
             echo 'Erro ao inserir os dados: ' . $e->getMessage();
-            $_SESSION['erro'] = "Não foi possível realizar as alterações."; 
             return false; 
     }
     }
@@ -83,12 +79,26 @@ class Usuario {
         }
     }
 
-    public function listar()
+    /**
+     * Pega o id do Usuário e Lista seus dados após Login
+     */
+    public static function getUsuarioPorID($id_usuario)
     {
         try{
-            $query = "SELECT * FROM {$this->table}"; 
-            $stmt = $this->db->query($query); 
-            return $stmt->fetchAll(PDO::FETCH_OBJ);
+            $query = "SELECT * FROM usuarios WHERE id_usuario =:id_usuario"; 
+            $conexao = DBConexao::getConexao();
+
+            $stmt = $conexao->prepare($query);
+            $stmt->bindParam(':id_usuario', $id_usuario);
+            $stmt->execute(); 
+
+            if($stmt->rowCount() === 1){
+                $usuario = $stmt->fetch(PDO::FETCH_ASSOC);
+                return $usuario;
+            }else{
+                throw new Exception('Usuário não encontrado');
+                return false;
+            }
             
         }catch(PDOException $e){
             echo 'Erro na inserção: ' . $e->getMessage(); 
@@ -117,9 +127,8 @@ class Usuario {
                 $_SESSION['erro'] = "E-mail ou senha incorretos!"; 
                 return false; 
             }
-            return null; 
-        }catch(PDOException $e){
-            echo "Erro na inserção". $e->getMessage();
+        } catch(PDOException $e){
+            echo "Erro na autenticação: " . $e->getMessage();
             return false; 
         }
     }

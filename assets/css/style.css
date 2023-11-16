@@ -182,7 +182,7 @@ main{
 }
 
 
-/* Cadastro */
+/* Cadastro e Login */
 .blocoFormRoxo {
     background-color: #44007E;
     border:1px solid #FFA452;
@@ -191,8 +191,17 @@ main{
     border-radius: 30px;
 
 }
+.blocoFormRoxoLogin {
+    background-color: #44007E;
+    border:1px solid #FFA452;
+    padding: 50px;
+    margin-top: 200px;
+    width: 1150px;
+    border-radius: 30px;
 
-.titulo-cadastro{
+}
+
+.titulo-form{
     display: flex;
     justify-content: center;
     color: var(--secundaria2);

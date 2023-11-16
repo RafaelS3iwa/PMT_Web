@@ -4,8 +4,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/controllers/EmpresaController.php";
 $empresaController = new EmpresaController();
 $empresaController->cadastrarEmpresa();
 ?>
-<main class="cadastro">
-    <h1 style="color: black;">Cadastro</h1>
+<main>
         <div class="container mt-5">
             <form action="/admin/empresas/cadastrar.php" method="post" class="estiloForm">
                 <div class="col-md-4">

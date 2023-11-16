@@ -6,7 +6,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/includes/cabecalho.php";
 <div id="escolhaCadastro" class="container">
     <div class="blocoFormRoxo">
         <div id="botao-escolha-cadastro">
-            <h1 class="titulo-cadastro">Cadastro</h1>
+            <h1 class="titulo-form">Cadastro</h1>
             <h3 class="texto-boas-vindas">Seja bem-vindo! Venha fazer parte do PMT!</h3>
             <form action="cadastro.php" method="post">
                 <div class="botao-formEscolha">

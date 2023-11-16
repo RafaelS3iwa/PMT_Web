@@ -110,18 +110,38 @@
     <div class="etapa" dado-step="7">
       <h3 class="titulo-etapa">Nos conte agora sobre:</h3>
       <h4 class="subtitulo-etapa">Última parte do Cadastro!</h4>
-      <div class="form-group">
-        <label for="id_area_interesse">Quais as áreas que você deseja atuar?</label>
-        <input type="email" name="id_area_interesse" id="id_area_interesse" required>
+        <div class="select-container">
+          <div class="select-group">
+              <label for="id_area_interesse">Escolha sua principal Área de Interesse:</label>
+              <select id="id_area_interesse">
+                  <option value="Item 1">Item 1</option>
+                  <option value="Item 2">Item 2</option>
+                  <option value="Item 3">Item 3</option>
+                  <!-- Adicione mais opções conforme necessário -->
+              </select>
+          </div>
+
+          <div class="select-group">
+              <label for="id_area_interesse2">Aqui sua Segunda Área de Interesse:</label>
+              <select id="id_area_interesse2">
+                  <option value="Item 1">Item 1</option>
+                  <option value="Item 2">Item 2</option>
+                  <option value="Item 3">Item 3</option>
+                  <!-- Adicione mais opções conforme necessário -->
+              </select>
+          </div>
+
+          <div class="select-group">
+              <label for="id_area_interesse3">Sua última Área de Interesse:</label>
+              <select id="id_area_interesse3">
+                  <option value="Item 1">Item 1</option>
+                  <option value="Item 2">Item 2</option>
+                  <option value="Item 3">Item 3</option>
+                  <!-- Adicione mais opções conforme necessário -->
+              </select>
+          </div>
       </div>
-      <div class="form-group">
-        <label for="id_area_interesse2">Quais as áreas que você deseja atuar?</label>
-        <input type="email" name="id_area_interesse2" id="id_area_interesse2" required>
-      </div>
-      <div class="form-group">
-        <label for="id_area_interesse3">Quais as áreas que você deseja atuar?</label>
-        <input type="email" name="id_area_interesse3" id="id_area_interesse3" required>
-      </div>
+
       <div class="form-group">
         <label for="estado_civil">Qual o seu Estado Civil?</label>
         <input type="text" name="estado_civil" id="estado_civil" required>

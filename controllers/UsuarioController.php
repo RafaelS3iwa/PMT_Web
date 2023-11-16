@@ -9,9 +9,6 @@ class UsuarioController
     {
         $this->usuarioModel = new Usuario();
     }
-    public function listarUsuarios(){
-        return $this->usuarioModel->listar();
-    }
 
     public function cadastrarUsuario(){
         if($_SERVER['REQUEST_METHOD'] === 'POST'){
@@ -46,11 +43,16 @@ class UsuarioController
                 $usuario = Usuario::autenticarLogin($email, $senha);
                 if ($usuario){ 
                     session_start(); 
-                    $_SESSION['id_usuario'] = $usuario->id;
+                    
+                    $_SESSION['id_usuario'] = $usuario['id_usuario'];
+                    if (isset($usuario['id_usuario'])) {
+                        $id_usuario = $usuario['id_usuario'];
+                        $_SESSION['dados_usuario'] = Usuario::getUsuarioPorID($id_usuario);
+                    };
                     header("Location: index.php"); 
                 }else{
                     echo "E-mail ou senha inválidos"; 
-                    header("Location: login.php"); 
+                    header("Location: /admin/login.php"); 
                 }
             }
         }

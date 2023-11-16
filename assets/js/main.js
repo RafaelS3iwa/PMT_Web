@@ -29,11 +29,11 @@ botaoIndex.addEventListener("click" , function(){
   if (escolhaLoginElement) {
       escolhaLoginElement.addEventListener("change", function(event) {
           if (event.target.id === "usuario") {
-              document.getElementById("usuarioForm").style.display = "block";
-              document.getElementById("empresaForm").style.display = "none";
+              document.getElementById("usuarioFormulario").style.display = "block";
+              document.getElementById("empresaFormulario").style.display = "none";
           } else if (event.target.id === "empresa") {
-              document.getElementById("usuarioForm").style.display = "none";
-              document.getElementById("empresaForm").style.display = "block";
+              document.getElementById("usuarioFormulario").style.display = "none";
+              document.getElementById("empresaFormulario").style.display = "block";
           }
       });
   } else {
