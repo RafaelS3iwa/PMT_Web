@@ -30,30 +30,27 @@ $usuarioController->cadastrarUsuario();
                 <input type="email" name="email" id="email" class="form-control" required>
             </div>
 
-            <div class="form-group">
-                <label for="senha" class="form-label">Senha</label>
-                <div class="input-group">
+            <div class="form-row">
+                <div class="col">
+                    <label for="senha" class="form-label">Senha</label>
                     <input type="password" name="senha" id="senha" class="form-control" required>
                     <button type="button" id="toggleSenha" class="btn btn-outline-secondary">
                         <i class="fa fa-eye-slash"></i>
                     </button>
                 </div>
-            </div>
 
-            <div class="form-group">
-                <label for="senha" class="form-label">Confirmar Senha</label>
-                <div class="input-group">
+                <div class="col">
+                    <label for="senha" class="form-label">Confirmar Senha</label>
                     <input type="password" name="senha" id="senha" class="form-control" required>
                     <button type="button" id="toggleConfirmarSenha" class="btn btn-outline-secondary">
                         <i class="fa fa-eye-slash"></i>
                     </button>
                 </div>
             </div>
-            <div class="col-12">
-                <button type="submit">Cadastrar</button>
-                <a href="/index.php" class="btn btn-secondary">Cancelar</a>
+            <div class="botoes">
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+            <a href="/index.php" class="btn btn-secondary">Cancelar</a>
             </div>
         </form>
     </div>
-
 </main>

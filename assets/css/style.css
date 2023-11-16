@@ -266,6 +266,9 @@ main{
     color: #FFFFFF;
 }
 
+.container mt-5{
+   width: 350px;
+}
 .estiloForm input[type="submit"] {
     background-color: #4CAF50;
     color: white;
