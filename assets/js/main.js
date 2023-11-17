@@ -3,10 +3,9 @@ document.addEventListener("DOMContentLoaded", function() {
 const botaoIndex = document.getElementById('botaoTopo');
 const menu = document.getElementById('menuBotao');
 
-botaoIndex.addEventListener("click" , function(){
+botaoIndex.addEventListener("click", function(){
     menu.classList.toggle('menuBotao-ativo');
-})
-
+});
 
 //Troca do formulário de Cadastro
   var escolhaCadastro = document.getElementById('escolhaCadastro');
@@ -92,3 +91,23 @@ document.getElementById('downloadButton').addEventListener('click', () => {
     var element = document.body;
     html2pdf(element);
 });
+
+//Mostra pop up
+document.addEventListener('DOMContentLoaded', function () {
+    var popup = document.getElementById('popup');
+    popup.style.display = 'block';
+});
+
+document.addEventListener('click', function () {
+    var popup = document.getElementById('popup');
+    popup.style.display = 'block';
+});
+
+function fecharPopup() {
+    var popup = document.getElementById('popup');
+    popup.style.display = 'none';
+}
+
+function irParaCadastroCandidato() {
+    window.location.href = '/admin/candidatos/cadastrar.php';
+}
