@@ -50,4 +50,16 @@
                 return false;
             }
         }
+
+        public function editar($dados){
+            try{
+                $query = "";
+            }catch(PDOException $e){
+
+            }
+        }
+
+        public function excluir($dados){
+            
+        }
     }

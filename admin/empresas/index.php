@@ -1,5 +1,5 @@
 <?php   
-    require_once $_SERVER['DOCUMENT_ROOT'] . "/includes/cabecalhoUsuarios.php";
+    require_once $_SERVER['DOCUMENT_ROOT'] . "/includes/cabecalhoEmpresas.php";
     require_once $_SERVER['DOCUMENT_ROOT'] . "/controllers/EmpresaController.php";
 ?>
 

@@ -1,7 +1,7 @@
 <?php
     session_start();
     if (isset($_SESSION['dados_empresa'])) {
-        $usuario = $_SESSION['dados_empresa'];
+        $empresa = $_SESSION['dados_empresa'];
     }else {
     echo "Dados do usuário não encontrados na sessão.";
     }
@@ -23,11 +23,11 @@
     <div id="barra-topo">
         <header id="cabecalho" class="container">
             <div id="logo">
-                <h1><a href="/admin/usuarios/index.php"><img src="/assets/img/Logo PMT true.png" alt="Logo PMT" height="90"></a></h1>
+                <h1><a href="/admin/empresas/index.php"><img src="/assets/img/Logo PMT true.png" alt="Logo PMT" height="90"></a></h1>
             </div>
 
             <div id="grupo-informacoes">
-                <div class="nomeUsuario">
+                <div class="nomeEmpresa">
                     <label><?php echo $empresa['nome_empresa']?></label>
                 </div>
                 <div class="principalAreaInteresse">
@@ -40,7 +40,7 @@
                 <nav id="menuBotao">
                     <ul>
                         <li><a href="#">Editar</a></li>
-                        <li><a href="../index.php">Sair</a></li>
+                        <li><a href="/controllers/logout.php">Sair</a></li>
                     </ul>
                 </nav>
             </div>

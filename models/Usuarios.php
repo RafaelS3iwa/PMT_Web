@@ -59,7 +59,7 @@ class Usuario {
         }catch(PDOException $e){
             echo 'Erro ao inserir os dados: ' . $e->getMessage();
             return false; 
-    }
+        }   
     }
 
     /**
@@ -133,4 +133,21 @@ class Usuario {
         }
     }
 
+    public static function isCandidato($id_usuario)
+    {   
+        try{
+            $query = "SELECT COUNT(*) FROM candidatos WHERE id_usuario = :id_usuario";
+            $conexao = DBConexao::getConexao();
+
+            $stmt = $conexao->prepare($query);
+            $stmt->bindParam(':id_usuario', $id_usuario);
+            $stmt->execute(); 
+
+            return $stmt->fetchColumn() > 0;
+        } catch(PDOException $e){
+            echo 'Erro na verificação de candidato: ' . $e->getMessage(); 
+            return false; 
+        }
+    }
 }
+

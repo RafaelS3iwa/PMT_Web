@@ -4,6 +4,17 @@
 ?>
 
 <main class="container mt-3 mb-3">
+
+    <div id="popup" class="popup">
+        <div id="texto-popup">
+            <p>Hey, vamos fazer seu cadastro de Usuário VIP?</p>
+        </div>
+        <div id="botoes-popup">
+            <button onclick="fecharPopup()">Fechar</button>
+            <button onclick="irParaCadastroCandidato()">Vamos lá!</button>
+        </div>
+    </div>
+
     <h1>Perfil do Usuário</h1>
         <form>
             <label for="id_usuario">ID do Usuário:</label>
@@ -19,5 +30,4 @@
             <input type="text" id="nome_social" name="nome_social" value="<?php echo $usuario['nome_social']; ?>" readonly><br><br>
         </form>
 </main>
-    
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/includes/rodape.php" ?>

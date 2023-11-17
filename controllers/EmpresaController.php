@@ -10,10 +10,6 @@ class EmpresaController
         $this->empresaModel = new Empresa();
     }
 
-    public function listarEmpresas(){
-        return $this->empresaModel->listar();
-    }
-
     public function cadastrarEmpresa(){
         if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
@@ -61,7 +57,7 @@ class EmpresaController
                     header("Location: index.php"); 
                 }else{
                     echo "E-mail ou senha inválidos"; 
-                    header("Location: index.php"); 
+                    header("Location: /admin/index.php"); 
                 }
             }
         }

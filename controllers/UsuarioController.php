@@ -45,24 +45,21 @@ class UsuarioController
                     session_start(); 
                     
                     $_SESSION['id_usuario'] = $usuario['id_usuario'];
-                    if (isset($usuario['id_usuario'])) {
-                        $id_usuario = $usuario['id_usuario'];
-                        $_SESSION['dados_usuario'] = Usuario::getUsuarioPorID($id_usuario);
-                    };
-                    header("Location: index.php"); 
-                }else{
-                    echo "E-mail ou senha inválidos"; 
-                    header("Location: /admin/login.php"); 
+                    if ($usuario){ 
+                        $_SESSION['id_usuario'] = $usuario['id_usuario'];
+        
+                        if(Usuario::isCandidato($usuario['id_usuario'])) {
+                            header("Location: candidatos/index.php");
+                        }else{
+                            $_SESSION['dados_usuario'] = Usuario::getUsuarioPorID($usuario['id_usuario']);
+                            header("Location: index.php");
+                        }
+                    } else {
+                        echo "E-mail ou senha inválidos"; 
+                        header("Location: /admin/login.php"); 
+                    }
                 }
             }
         }
-    }
-
-    public function logoutUsuario(){
-        session_start();
-        session_unset();
-        session_destroy();
-        header("Location: ../index.php");
-        exit();
     }
 }

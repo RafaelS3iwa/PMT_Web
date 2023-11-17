@@ -16,7 +16,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/candidatos.css">
-    <title>PMT</title>  
+    <title>PMT</title>
+
 </head>
 
 <body>
@@ -39,8 +40,8 @@
                 <img src="/assets/img/icone-usuario.png" height="60" class="botaoUsuario">
                 <nav id="menuBotao">
                     <ul>
-                        <li><a href="#">Editar</a></li>
-                        <li><a href="../index.php">Sair</a></li>
+                        <li><a href="/admin/usuarios/editar.php">Editar</a></li>
+                        <li><a href="/controllers/logout.php">Sair</a></li>
                     </ul>
                 </nav>
             </div>
