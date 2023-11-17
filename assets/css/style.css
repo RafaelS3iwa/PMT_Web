@@ -331,7 +331,7 @@ main{
     font-size: 20px;
 }
 
-.form-row {
+.form-editar {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -357,7 +357,7 @@ main{
 }
 
 .accordion .form-control{
-    background-color: var(--primaria2);
+    background-color: var(--primaria);
     border:1px solid #FFA452;
     border-radius: 20px;
     color: var(--texto);

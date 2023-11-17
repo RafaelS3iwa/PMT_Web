@@ -42,24 +42,23 @@ class UsuarioController
             }else{
                 $usuario = Usuario::autenticarLogin($email, $senha);
                 if ($usuario){ 
-                    session_start(); 
-                    
                     $_SESSION['id_usuario'] = $usuario['id_usuario'];
-                    if ($usuario){ 
-                        $_SESSION['id_usuario'] = $usuario['id_usuario'];
-        
+               
                         if(Usuario::isCandidato($usuario['id_usuario'])) {
                             header("Location: candidatos/index.php");
                         }else{
-                            $_SESSION['dados_usuario'] = Usuario::getUsuarioPorID($usuario['id_usuario']);
+                            $_SESSION['id_usuario'] = $usuario['id_usuario'];
                             header("Location: index.php");
                         }
                     } else {
                         echo "E-mail ou senha inválidos"; 
                         header("Location: /admin/login.php"); 
-                    }
                 }
             }
         }
+    }
+
+    public function editarUsuario(){
+
     }
 }
