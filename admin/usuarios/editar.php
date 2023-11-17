@@ -1,6 +1,8 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . "/includes/cabecalhoUsuarios.php";
 require_once $_SERVER['DOCUMENT_ROOT'] . "/controllers/UsuarioController.php";
+
+$usuarioController = new UsuarioController();
 ?>
 
 <main>
@@ -37,6 +39,11 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/controllers/UsuarioController.php";
                             <a href="/admin/usuarios/index.php"><img src="/assets/img/icone_x.png" height="45"></a>
                         </div>
                     </div>
+                </div>
+
+                <div class="opcoes-editar">
+                    <h4>Gostaria de se tornar candidato?</h4>
+                    <button><a href="/admin/candidatos/cadastrar.php">Cadastrar</a></button>
                 </div>
             </div>
         </div>

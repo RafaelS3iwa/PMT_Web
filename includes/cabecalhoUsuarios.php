@@ -1,7 +1,7 @@
 <?php
     session_start();
-    if (isset($_SESSION['dados_usuario'])) {
-        $usuario = $_SESSION['dados_usuario'];
+    if (isset($_SESSION['id_usuario'])) {
+        $usuario = $_SESSION['id_usuario'];
     }else {
     echo "Dados do usuário não encontrados na sessão.";
     }
