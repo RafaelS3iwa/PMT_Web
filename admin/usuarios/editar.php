@@ -15,7 +15,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/controllers/UsuarioController.php";
                         </button>
                     </h2>
                     <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                        <div class="form-row">
+                        <div class="form-editar">
                             <div class="col">
                                 <label for="nome_completo" class="form-label">Nome Completo: </label>
                                 <input type="text" class="form-control" id="nome_completo" placeholder="">

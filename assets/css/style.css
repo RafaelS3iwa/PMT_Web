@@ -269,9 +269,11 @@ main{
 
 }
 
-.container mt-5{
-   width: 350px;
+.estiloForm .form-row{
+    display: flex;
+    justify-content: space-between;
 }
+
 .estiloForm input[type="submit"] {
     background-color: #4CAF50;
     color: white;
@@ -331,7 +333,7 @@ main{
     font-size: 20px;
 }
 
-.form-row {
+.form-editar {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
