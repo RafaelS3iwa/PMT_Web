@@ -255,16 +255,18 @@ main{
     color: var(--secundaria2);
 }
 
-.estiloForm input {
+.estiloForm .form-control{
     width: 350px;
     padding: 10px;
-    border: 1px solid #FFA452;
-    background-color: #44007E;
+    background-color: var(--primaria2);
+    border:1px solid #FFA452;
     margin-bottom: 16px;
     padding: 5px;
     border-radius: 15px;
     font-size: 1.2rem;
-    color: #FFFFFF;
+    border-radius: 20px;
+    color: var(--texto);
+
 }
 
 .container mt-5{
@@ -346,7 +348,7 @@ main{
 
 .botoes-editar .botao-confirmar{
     margin-left: 10px;
-    background-color: var(--primaria2);
+    background-color: var(--primaria);
     border-color: transparent;
 }
 
