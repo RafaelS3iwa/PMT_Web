@@ -126,8 +126,7 @@
                 $stmt->bindParam(':id_candidato', $id_candidato, PDO::PARAM_INT); 
                 $stmt->execute(); 
 
-                $id_usuario = $stmt->fetch(PDO::FETCH_ASSOC);
-                return $id_usuario; 
+                return $stmt->fetchColumn();
             }catch(PDOException $e){
                 echo 'Erro na inserção: ' . $e->getMessage(); 
                 return null;

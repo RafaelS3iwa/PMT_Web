@@ -8,6 +8,7 @@ $areaController = new AreaInteresseController();
 $candidatoController = new CandidatoController();
 $candidatoController->cadastrarCandidato(); 
 ?>
+<script src="/assets/js/main.js"></script>
 <main>
   <div class="blocoCentralizado">
     <form class="blocoFormRoxo" id="multiStepForm" action="cadastrar.php" method="post" enctype="multipart/form-data">

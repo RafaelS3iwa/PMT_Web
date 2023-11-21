@@ -46,8 +46,8 @@ class UsuarioController
                
                         if(Usuario::isCandidato($usuario['id_usuario'])) {
                             session_start();
-                            $idCandidato = Usuario::getIdCandidato($usuario['id_usuario']); 
-                            $_SESSION['id_candidato'] = $idCandidato;
+                            $id_candidato = Usuario::getIdCandidato($usuario['id_usuario']); 
+                            $_SESSION['id_candidato'] = $id_candidato;
                             header("Location: /admin/candidatos/index.php");
                         }else{
                             session_start();

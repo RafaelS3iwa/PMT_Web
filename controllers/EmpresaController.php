@@ -90,10 +90,10 @@ class EmpresaController
                 if ($empresa){ 
                     session_start();
                     $_SESSION['id_empresa'] = $empresa['id_empresa'];
-                    header("Location: index.php"); 
+                    header("Location: /admin/empresas/index.php"); 
                 }else{
                     echo "E-mail ou senha inválidos"; 
-                    header("Location: /admin/index.php"); 
+                    header("Location: /admin/login.php"); 
                 }
             }
         }

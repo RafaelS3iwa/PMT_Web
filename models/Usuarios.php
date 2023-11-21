@@ -92,7 +92,7 @@ class Usuario
             $conexao = DBConexao::getConexao();
 
             $stmt = $conexao->prepare($query);
-            $stmt->bindParam(':id_usuario', $id_usuario);
+            $stmt->bindParam(':id_usuario', $id_usuario, PDO::PARAM_INT);
             $stmt->execute();
 
             if ($stmt->rowCount() === 1) {
@@ -115,7 +115,7 @@ class Usuario
             $conexao = DBConexao::getConexao();
 
             $stmt = $conexao->prepare($query);
-            $stmt->bindParam(':id_usuario', $id_usuario);
+            $stmt->bindParam(':id_usuario', $id_usuario, PDO::PARAM_INT);
             $stmt->execute();
 
             return $stmt->fetchColumn();
@@ -158,7 +158,7 @@ class Usuario
             $conexao = DBConexao::getConexao();
 
             $stmt = $conexao->prepare($query);
-            $stmt->bindParam(':id_usuario', $id_usuario);
+            $stmt->bindParam(':id_usuario', $id_usuario, PDO::PARAM_INT);
             $stmt->execute();
 
             return $stmt->fetchColumn() > 0;
