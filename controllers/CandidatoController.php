@@ -53,7 +53,7 @@ class CandidatoController
                 $dados['foto'] = $novoNomeArquivo;
             }
             $this->candidatoModel->cadastrar($dados);
-            var_dump($dados);
+            header('Location: index.php'); 
             exit;
         }
     }
@@ -110,10 +110,11 @@ class CandidatoController
         }
     }
 
-    public function listarDados($id_candidato)
+    public function listarDadosCandidato($id_candidato)
     {
         $id_candidato = $_SESSION['id_candidato']; 
-        $dadosCandidato = Candidato::listarDados($id_candidato);
+        $id_usuario = Candidato::buscarIdUsuario($id_candidato);
+        $dadosCandidato = Candidato::listarDados($id_usuario);
         return $dadosCandidato;
     }
 

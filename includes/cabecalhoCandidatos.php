@@ -6,7 +6,7 @@
     if (isset($_SESSION['id_candidato'])) {
         $id_candidato = $_SESSION['id_candidato'];
         $candidatoController = new CandidatoController(); 
-        $candidato = $candidatoController->listarDados($id_candidato); 
+        $candidato = $candidatoController->listarDadosCandidato($id_candidato); 
     }else {
     echo "Dados do usuário não encontrados na sessão.";
     }
@@ -31,7 +31,7 @@
             <div id="logo">
                 <h1><a href="/admin/candidatos/index.php"><img src="/assets/img/Logo PMT true.png" alt="Logo PMT" height="90"></a></h1>
             </div>
-
+            
             <div id="grupo-informacoes">
                 <div class="nomeUsuario">
                     <label><?=$candidato['nome_completo']?></label>

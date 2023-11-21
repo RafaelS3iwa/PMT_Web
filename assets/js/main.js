@@ -119,3 +119,5 @@ function fecharPopup() {
 function irParaCadastroCandidato() {
     window.location.href = '/admin/candidatos/cadastrar.php';
 }
+
+
