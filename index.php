@@ -64,17 +64,23 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/includes/cabecalho.php";
       <div class="box-chamadas-coluna">
         <div class="box-nossa-historia">
           <h3>Nossa História</h3>
-          <a class="botao-roxo">Saiba Mais</a>
+          <div class="botao-roxo">
+            <a>Saiba Mais</a>
+          </div>
         </div>
       </div>
       <div class="box-chamadas-coluna">
         <div class="box-time">
           <h3>O Time</h3>
-          <a class="botao-roxo">Saiba Mais</a>
+          <div class="botao-roxo">
+            <a>Saiba Mais</a>
+          </div>
         </div>
         <div class="box-nossos-valores">
           <h3>Nossos Valores</h3>
-          <a class="botao-roxo">Saiba Mais</a>
+          <div class="botao-roxo">
+            <a>Saiba Mais</a>
+          </div>
         </div>
       </div>
     </div>
