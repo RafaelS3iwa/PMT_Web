@@ -59,7 +59,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/includes/cabecalho.php";
   </div>
 
   <section class="container">
-    <h2>Sobre</h2>
+    <h2 class="Sobre">Sobre</h2>
     <div id="box-chamadas">
       <div class="box-chamadas-coluna">
         <div class="box-nossa-historia">

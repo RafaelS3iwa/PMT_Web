@@ -291,15 +291,49 @@ main{
 }
 
 #box-chamadas{
-    background-image: url("/assets/img/teste.jpg");
-    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    width: 652px;
 }
 
 #box-chamadas .box-nossa-historia { 
-    height: 100px;
-    
+    border: 4px solid var(--texto);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-image: url("/assets/img/teste.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 400px;
 }
 
+.Sobre{
+    color: var(--secundaria2);
+}
+
+#box-chamadas h3 {
+    color: var(--texto);
+}
+
+#box-chamadas .box-time{
+    border:4px solid var(--texto);
+    border-top-right-radius: 15px;
+    background-image: url("/assets/img/teste2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:200px;
+    width: 250px;
+}
+
+#box-chamadas .box-nossos-valores{
+    border:4px solid var(--texto);
+    border-bottom-right-radius: 15px;
+    background-image: url("/assets/img/teste3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 250px;
+}
 
 /* Cadastro e Login */
 .blocoFormRoxo {
