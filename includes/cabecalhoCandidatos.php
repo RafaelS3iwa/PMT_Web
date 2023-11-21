@@ -1,12 +1,12 @@
 <?php
-    require_once $_SERVER['DOCUMENT_ROOT'] . "/controllers/UsuarioController.php";
+    require_once $_SERVER['DOCUMENT_ROOT'] . "/controllers/CandidatoController.php";
 
     session_start();
 
-    if (isset($_SESSION['id_usuario'])) {
-        $id_usuario = $_SESSION['id_usuario'];
-        $usuarioController = new UsuarioController(); 
-        $usuario = $usuarioController->listarDadosUsuario($id_usuario);
+    if (isset($_SESSION['id_candidato'])) {
+        $id_candidato = $_SESSION['id_candidato'];
+        $candidatoController = new CandidatoController(); 
+        $candidato = $candidatoController->listarDados($id_candidato); 
     }else {
     echo "Dados do usuário não encontrados na sessão.";
     }
@@ -29,23 +29,24 @@
     <div id="barra-topo">
         <header id="cabecalho" class="container">
             <div id="logo">
-                <h1><a href="/admin/usuarios/index.php"><img src="/assets/img/Logo PMT true.png" alt="Logo PMT" height="90"></a></h1>
+                <h1><a href="/admin/candidatos/index.php"><img src="/assets/img/Logo PMT true.png" alt="Logo PMT" height="90"></a></h1>
             </div>
 
             <div id="grupo-informacoes">
                 <div class="nomeUsuario">
-                    <label><?=$usuario['nome_completo']?></label>
+                    <label><?=$candidato['nome_completo']?></label>
                 </div>
                 <div class="principalAreaInteresse">
-                    <label>Principal Área Interesse</label>
+                    <label><?=$candidato['id_area_interesse']?></label>
                 </div>
             </div>
 
             <div id="botaoTopo">
                 <img src="/assets/img/icone-usuario.png" height="60" class="botaoUsuario">
-                <nav id="menuBotao">
+                <nav id="menuBotaoLogin">
                     <ul>
-                        <li><a href="/admin/usuarios/editar.php">Editar</a></li>
+                        <li><a href="/admin/candidatos/editar.php">Editar</a></li>
+                        <li><a href="/admin/candidatos/historico.php">Histórico</a></li>
                         <li><a href="/controllers/logout.php">Sair</a></li>
                     </ul>
                 </nav>

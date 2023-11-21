@@ -1,7 +1,11 @@
 <?php
+    require_once $_SERVER['DOCUMENT_ROOT'] . "/controllers/EmpresaController.php"; 
+
     session_start();
-    if (isset($_SESSION['dados_empresa'])) {
-        $empresa = $_SESSION['dados_empresa'];
+    if (isset($_SESSION['id_empresa'])) {
+        $id_empresa = $_SESSION['id_empresa']; 
+        $empresaController = new EmpresaController(); 
+        $empresa = $empresaController->listarDadosEmpresa($id_empresa); 
     }else {
     echo "Dados do usuário não encontrados na sessão.";
     }
@@ -28,7 +32,7 @@
 
             <div id="grupo-informacoes">
                 <div class="nomeEmpresa">
-                    <label><?php echo $empresa['nome_empresa']?></label>
+                    <label><?=$empresa['nome_empresa']?></label>
                 </div>
                 <div class="principalAreaInteresse">
                     <label>Principal Área Interesse</label>
@@ -37,9 +41,10 @@
 
             <div id="botaoTopo">
                 <img src="/assets/img/icone-usuario.png" height="60" class="botaoUsuario">
-                <nav id="menuBotao">
+                <nav id="menuBotaoLogin">
                     <ul>
-                        <li><a href="#">Editar</a></li>
+                        <li><a href="/admin/empresas/editar.php">Editar</a></li>
+                        <li><a href="/admin/vagas/historico.php">Histórico</a></li>
                         <li><a href="/controllers/logout.php">Sair</a></li>
                     </ul>
                 </nav>

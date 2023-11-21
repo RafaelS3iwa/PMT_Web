@@ -12,7 +12,7 @@ class UsuarioController
 
     public function cadastrarUsuario(){
         if($_SERVER['REQUEST_METHOD'] === 'POST'){
-
+            
             $dados = [
                 'nome_completo' => $_POST['nome_completo'], 
                 'nome_social' => $_POST['nome_social'],
@@ -45,8 +45,12 @@ class UsuarioController
                     $_SESSION['id_usuario'] = $usuario['id_usuario'];
                
                         if(Usuario::isCandidato($usuario['id_usuario'])) {
-                            header("Location: candidatos/index.php");
+                            session_start();
+                            $idCandidato = Usuario::getIdCandidato($usuario['id_usuario']); 
+                            $_SESSION['id_candidato'] = $idCandidato;
+                            header("Location: /admin/candidatos/index.php");
                         }else{
+                            session_start();
                             $_SESSION['id_usuario'] = $usuario['id_usuario'];
                             header("Location: index.php");
                         }
@@ -58,7 +62,26 @@ class UsuarioController
         }
     }
 
-    public function editarUsuario(){
+    public function listarDadosUsuario($id_usuario){
+        $id_usuario = $_SESSION['id_usuario'];
+        $dadosUsuario = Usuario::getUsuarioPorID($id_usuario);
+        return $dadosUsuario; 
+    }
 
+    public function editarUsuario(){
+        $id_usuario = $_SESSION['id_usuario'];
+        if($_SERVER['REQUEST_METHOD'] === 'POST'){
+
+            $dados = [
+                'nome_completo' => $_POST['nome_completo'], 
+                'nome_social' => $_POST['nome_social'],
+                'data_nascimento' => $_POST['data_nascimento'], 
+                'email' => $_POST['email']
+            ];
+
+            $this->usuarioModel->editar($id_usuario, $dados);
+            header('Location: index.php');
+            exit; 
+        }
     }
 }

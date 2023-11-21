@@ -6,7 +6,7 @@ $usuarioController->cadastrarUsuario();
 ?>
 
 <main>
-    <div class="container mt-5">
+    <div class="container">
         <form action="/admin/usuarios/cadastrar.php" method="post" class="estiloForm">
             <div class="form-row">
                 <div class="col">

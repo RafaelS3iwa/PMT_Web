@@ -33,6 +33,47 @@ class EmpresaController
         }
     }
 
+    public function editarEmpresa(){
+        $id_empresa = $_SESSION['id_empresa']; 
+        if($_SERVER['REQUEST_METHOD'] === 'POST'){
+
+            $dados = [
+                'nome_empresa' => $_POST['nome_empresa'],
+                'cnpj' => $_POST['cnpj'],
+                'inscricao_estadual' => $_POST['inscricao_estadual'],
+                'data_abertura' => $_POST['data_abertura'],
+                'responsavel_legal' => $_POST['responsavel_legal'],
+                'email_corporativo' => $_POST['email_corporativo'],
+                'telefone' => $_POST['telefone'],
+                'celular' => $_POST['celular'],
+                'logradouro' => $_POST['logradouro'],
+                'bairro' => $_POST['bairro'],
+                'numero' => $_POST['numero'],
+                'cep' => $_POST['cep'],
+                'cidade' => $_POST['cidade'],
+                'estado' => $_POST['estado'],
+            ];
+
+            if (isset($_FILES['logotipo']['name']) && !empty($_FILES['logotipo']['name'])) {
+                $fileInfo = pathinfo($_FILES['logotipo']['name']);
+                $nomeArquivo = md5(uniqid());
+                $uploadDir = __dir__ . "/../uploads/empresas";
+
+                if (!is_dir($uploadDir)) {
+                    mkdir($uploadDir, 0777, true);
+                }
+
+                $novoNomeArquivo = $nomeArquivo . "." . $fileInfo['extension'];
+                $pastaDestino = $uploadDir . "/" . $novoNomeArquivo;
+                move_uploaded_file($_FILES['logotipo']['tmp_name'], $pastaDestino);
+                $dados['logotipo'] = $novoNomeArquivo;
+            }
+
+            $this->empresaModel->editar($id_empresa, $dados); 
+            var_dump($dados);
+        }   
+    }
+
     public function loginEmpresa(){
         if($_SERVER['REQUEST_METHOD'] === 'POST'){
             $email = $_POST['email_corporativo']; 
@@ -47,13 +88,8 @@ class EmpresaController
             }else{
                 $empresa = Empresa::autenticarLogin($email, $senha);
                 if ($empresa){ 
-                    session_start(); 
-
+                    session_start();
                     $_SESSION['id_empresa'] = $empresa['id_empresa'];
-                    if(isset($empresa['id_empresa'])){
-                        $id_empresa = $empresa['id_empresa']; 
-                        $_SESSION['dados_empresa'] = Empresa::getEmpresaPorID($id_empresa);
-                    }; 
                     header("Location: index.php"); 
                 }else{
                     echo "E-mail ou senha inválidos"; 
@@ -61,5 +97,11 @@ class EmpresaController
                 }
             }
         }
+    }
+
+    public function listarDadosEmpresa($id_empresa){
+        $id_empresa = $_SESSION['id_empresa']; 
+        $dadosEmpresa = Empresa::getEmpresaPorID($id_empresa); 
+        return $dadosEmpresa;
     }
 }

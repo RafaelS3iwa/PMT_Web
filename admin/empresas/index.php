@@ -1,23 +1,50 @@
-<?php   
-    require_once $_SERVER['DOCUMENT_ROOT'] . "/includes/cabecalhoEmpresas.php";
-    require_once $_SERVER['DOCUMENT_ROOT'] . "/controllers/EmpresaController.php";
+<?php
+require_once $_SERVER['DOCUMENT_ROOT'] . "/includes/cabecalhoEmpresas.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . "/controllers/VagaController.php";
 ?>
 
-<main class="container mt-3 mb-3">
-    <h1>Perfil da Empresa</h1>
-        <form>
-            <label for="id_empresa">ID do Usuário:</label>
-            <input type="text" id="id_empresa" name="id_empresa" value="<?php echo $empresa['id_empresa']; ?>" readonly><br><br>
+<main>
+    <div class="blocoCentralizado">
 
-            <label for="email_corporativo">Email:</label>
-            <input type="email" id="email_corporativo" name="email_corporativo" value="<?php echo $empresa['email_corporativo']; ?>" readonly><br><br>
-        
-            <label for="nome_empresa">Nome:</label>
-            <input type="text" id="nome_empresa" name="nome_empresa" value="<?php echo $empresa['nome_empresa']; ?>" readonly><br><br>
+        <div class="blocoFormRoxo">
+            <h1 class="titulo-h1">Suas Vagas
+                <a href="/admin/vagas/cadastrar.php" class="btn btn-primary float-end">Criar Vaga</a>
+            </h1>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Nome da Vaga</th>
+                        <th>Principal Área de Interesse</th>
+                        <th>Data de Publicação</th>
+                        <th>Número de Candidaturas</th>
+                        <th></th>
+                    </tr>
+                </thead>
 
-            <label for="responsavel_legal">Nome Social:</label>
-            <input type="text" id="responsavel_legal" name="responsavel_legal" value="<?php echo $empresa['responsavel_legal']; ?>" readonly><br><br>
-        </form>
+                <tbody>
+                    <?php
+                        $vagaController = new VagaController();
+                        $vagas = $vagaController->listarVaga();
+
+                        foreach($vagas as $vaga):
+                    ?>
+
+                    <tr>
+                        <td><?=$vaga->nome_vaga?></td>
+                        <td><?=$vaga->id_area_interesse?></td>
+                        <td><?=$vaga->data_publicacao?></td>
+                        <td>0</td>
+                        <td>
+                            <a href="/admin/vagas/historico.php?id_vaga=<?=$vaga->id_vaga?>" class="btn btn-primary">Exibir</a>
+                            <a href="/admin/vagas/editar.php?id_vaga=<?=$vaga->id_vaga?>" class="btn btn-danger">Editar</a>
+                        </td>
+                    </tr>
+
+                    <?php endforeach; ?>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </main>
-    
+
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/includes/rodape.php" ?>

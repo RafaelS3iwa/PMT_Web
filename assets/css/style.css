@@ -7,7 +7,41 @@
     --texto: #FFFFFF;
 }
 
+/* Apenas Teste */
+.container .lista-vagas{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 30px;
+}
 
+.vaga {
+    border: 1px solid var(--laranja);
+    color: var(--texto);
+    padding: 10px;
+    max-width: 500px; /* Use max-width instead of width for responsiveness */
+    height: auto;
+}
+
+.vaga h3 {
+    text-align: center;
+    color: var(--laranja);
+}
+
+.vaga .beneficios,
+.vaga .salario {
+    color: var(--laranja);
+}
+
+.botoes {
+    margin-top: 10px;
+}
+
+.botao {
+    padding: 5px 10px;
+    margin-right: 5px;
+    height: 35px; /* Fix typo: remove the extra space between 35 and px */
+    vertical-align: top;
+}
 /* Geral/Cabeçalho */
 *{
     margin: 0;
@@ -17,6 +51,10 @@
 
 body{
     background-color: var(--primaria);
+}
+
+.titulo-h1{
+    color: var(--secundaria2);
 }
 
 #barra-topo{
@@ -100,6 +138,41 @@ body{
     font-size: 20px;
 }
 
+/* Menu Botão Candidato */
+#menuBotaoLogin{
+    position: absolute;
+    background-color: var(--primaria2);
+    top: -1000px;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    z-index: 999999;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.5);
+    transition: right 0.5s;
+    border: 2px solid var(--laranja);
+}
+
+#menuBotaoLogin.menuBotaoLogin-ativo{
+    top: 50px;
+    left: -115px;
+}
+
+#menuBotaoLogin ul {
+    display: block;
+    margin-top: 5px;
+    list-style: none;
+}
+
+#menuBotaoLogin ul li {
+    padding: 8px;
+}
+
+#menuBotaoLogin ul a {
+    color: var(--texto);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+}
 
 /* Padrão da Main */
 main{
@@ -345,16 +418,65 @@ main{
     margin-bottom: 10px;
 }
 
+/* Cadastro Candidato */
+.blocoCentralizado{
+    display: flex;
+    justify-content: center;
+}
+
+
+.etapa{
+    background-color: var(--primaria2);
+    border: none;
+    padding: .5rem;
+    display: none;
+    color: var(--texto);
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    gap: .25rem
+}
+
+.form-group label{
+    font-weight: bold;
+    font-size: .8em;
+}
+
+.etapa.ativa{
+    display: block;
+}
+
 /* Editar Perfil Usuário */
+
+.estiloForm .form-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  
+  .select-container {
+    margin-top: 1rem; /* Add margin-top to position select tags below labels */
+  }
+
+#editar-empresa .blocoFormRoxo{
+    margin-top: 150px;
+}
 .accordion-flush .accordion-item {
     background-color: var(--primaria2);
 }
 
 .accordion-collapse {
-    border: 5px solid #FFA452;
     background-color: var(--primaria);
     border-radius: 20px;
     margin-bottom: 25px;
+    padding-bottom: 35px;
 }
 
 .accordion-button{
@@ -366,7 +488,7 @@ main{
 
 .accordion-item .accordion-button:not(.collapsed) {
     background-color: var(--primaria2);
-    color: var(--secundaria2); /* Cor do texto quando expandido */
+    color: var(--secundaria2); 
 }
 
 .accordion-button::after {
@@ -381,12 +503,17 @@ main{
     justify-content: space-between;
     align-items: center;
     margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.form-editar .col{
+    margin-top: 15px;
 }
 
 .botoes-editar{
     display: flex;
     justify-content: start;
-    margin-top: 25px;
+    margin-top: 35px;
 }
 
 .botoes-editar .botao-confirmar{
@@ -399,11 +526,77 @@ main{
     margin-left: 30px; /* Ou ajuste a distância desejada */
 }
 
+.accordion .form-label{
+    font-weight: bold;
+}
+
 .accordion .form-control{
     background-color: var(--primaria);
     border:1px solid #FFA452;
     border-radius: 20px;
     color: var(--texto);
+}
+
+.form-control::placeholder{
+    color: var(--texto)
+}
+
+.opcoes-editar {
+    margin-top: 25px;
+    color: var(--laranja);
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Adicionado para centralizar verticalmente os itens */
+    justify-content: center;
+}
+
+.opcoes-editar a {
+    text-decoration: none;
+    color: var(--laranja);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.opcoes-editar .botao-link-cadastro {
+    background-color: var(--primaria);
+    border: 1px solid #FFA452;
+    border-radius: 10px;
+    margin-left: 25px;
+    width: 110px;
+    height: 40px;
+}
+
+.opcoes-editar .pergunta-candidato {
+    margin: 0;  
+    font-size: 20px;
+}
+
+.excluir-conta{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.excluir-conta a{
+    text-decoration: none;
+    color: var(--laranja);
+    font-size: 15px;
+}
+
+.excluir-conta .botao-excluir-conta{
+    background-color: var(--primaria2);
+    border: 1px solid #FFA452;
+    border-radius: 10px;
+    margin-left: 25px;
+    width: 110px;
+    height: 40px;
+}
+
+/* Cadastrar Vaga */
+#cadastro-vaga{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
 }
 
 /* Rodapé */
@@ -420,7 +613,7 @@ main{
 
 #rodape img{
     position: relative;
-    bottom: 135px;
+    bottom: 65px;
     left: 40px;
 }
 

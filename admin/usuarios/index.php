@@ -1,6 +1,5 @@
 <?php   
     require_once $_SERVER['DOCUMENT_ROOT'] . "/includes/cabecalhoUsuarios.php";
-    require_once $_SERVER['DOCUMENT_ROOT'] . "/controllers/UsuarioController.php";
 ?>
 
 <main class="container mt-3 mb-3">
@@ -18,7 +17,7 @@
     <h1>Perfil do Usuário</h1>
         <form>
             <label for="id_usuario">ID do Usuário:</label>
-            <input type="text" id="id_usuario" name="id_usuario" value="<?php echo $usuario['id_usuario']; ?>" readonly><br><br>
+            <input type="text" id="id_usuario" name="id_usuario" value="<?php echo $usuario['id_usuario'] ?>" readonly><br><br>
 
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" value="<?php echo $usuario['email']; ?>" readonly><br><br>

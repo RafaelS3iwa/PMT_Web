@@ -7,6 +7,14 @@ botaoIndex.addEventListener("click", function(){
     menu.classList.toggle('menuBotao-ativo');
 });
 
+//Botao Candidato e Empresa
+const botaoMenu = document.getElementById('botaoTopo');
+const menuLogin = document.getElementById('menuBotaoLogin');
+
+botaoMenu.addEventListener("click", function(){
+    menuLogin.classList.toggle('menuBotaoLogin-ativo');
+});
+
 //Troca do formulário de Cadastro
   var escolhaCadastro = document.getElementById('escolhaCadastro');
   if (escolhaCadastro) {
