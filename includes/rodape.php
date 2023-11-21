@@ -3,7 +3,10 @@
         <div class="logo-footer">
             <img src="/assets/img/Logo PMT true.png" alt="Logo" height="80"> 
         </div>
-        <div id="copyright">
+    </div>
+
+    <div id="copyright">
+    <div class="texto-copyright">
             Copyright &COPY; <?= date("Y") ?> - Todos os direitos são reservados
         </div>
         <div class="redes-sociais">
