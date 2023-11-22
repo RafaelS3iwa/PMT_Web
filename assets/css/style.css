@@ -178,6 +178,21 @@ main{
     padding-top: 110px;
 }
 
+/* Contato */
+.texto-contato{
+    color: var(--texto  );
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 45px;
+}
+
+.titulo-contato{
+    color: var(--secundaria2);
+    font-weight: bold;
+    font-size: 35px;    
+    text-align: center;
+}
+
 /* Form Guia */
 
 .guia-sobre{
@@ -529,7 +544,7 @@ main{
     color: var(--secundaria2);
     font-weight: bold;
     font-size: 35px;    
-    margin-bottom: -25px;
+    margin-bottom: -45px;
 }
 
 .titulo-temas{
@@ -543,7 +558,7 @@ main{
 .imagemSobre{
     border: 2px solid var(--laranja);
     position: relative;
-    top: 35px
+    top:  150px
 }
 
 .pagina-sobre .texto-guia{
@@ -701,13 +716,30 @@ main{
     font-size: 1.2rem;
     border-radius: 20px;
     color: var(--texto);
-
 }
+
+.estiloForm #data_abertura, 
+.estiloForm #cnpj, 
+.estiloForm #email_corporativo, 
+.estiloForm #data_nascimento, 
+.estiloForm #email,
+.estiloForm #senha{
+    width: 725px;
+} 
 
 .estiloForm .form-row{
     display: flex;
     justify-content: space-between;
 }   
+
+.entrar{
+    width: 725px;
+    height: 35px;
+    background-color: var(--laranja);
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
 /* Usuário Index */
 
 .popup {
@@ -760,6 +792,16 @@ main{
 }
 
 /* Editar Perfil Usuário */
+#editar-candidato{
+    margin-top: 125px;
+}
+
+.titulo-editar{
+    text-align: center;
+    color: var(--secundaria2);
+    font-size: 50px;
+    margin-bottom: 25px;
+}
 
 .estiloForm .form-row {
     display: flex;
@@ -844,10 +886,6 @@ main{
     border:1px solid #FFA452;
     border-radius: 20px;
     color: var(--texto);
-}
-
-.form-control::placeholder{
-    color: var(--texto)
 }
 
 .opcoes-editar {

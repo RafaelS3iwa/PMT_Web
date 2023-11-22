@@ -27,7 +27,7 @@ class EmpresaController
                 ]; 
                 
                 $this->empresaModel->cadastrar($dados); 
-                header('Location: index.php'); 
+                header('Location: ../index.php'); 
                 exit;
             }
         }

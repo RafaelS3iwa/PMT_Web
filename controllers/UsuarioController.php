@@ -22,6 +22,8 @@ class UsuarioController
             ];
 
             $this->usuarioModel->cadastrar($dados);
+            session_start();
+
             header('Location: index.php'); 
             exit; 
         }
