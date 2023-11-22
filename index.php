@@ -27,7 +27,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/includes/cabecalho.php";
             <!-- Primeiro Slide -->
             <div class="carousel-item active">
               <a href="/documentacao/guiaCandidatoCadastro.php">
-                <img src="/assets/img/teste.jpg" class="d-block w-100" alt="...">
+                <img src="/assets/img/pixel4.jpg" class="d-block w-100" alt="...">
               </a>
               <div class="carousel-caption d-none d-md-block">
                 <h5>Guia do Usuário para Usuários</h5>
@@ -37,7 +37,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/includes/cabecalho.php";
             <!-- Segundo Slide -->
             <div class="carousel-item">
               <a href="/documentacao/guiaEmpresaCadastro.php">
-                <img src="/assets/img/teste2.jpg  " class="d-block w-100" alt="...">
+                <img src="/assets/img/pixel.jpg" class="d-block w-100" alt="...">
               </a>
               <div class="carousel-caption d-none d-md-block">
                 <h5>Guia do Usuário para Empresas</h5>
