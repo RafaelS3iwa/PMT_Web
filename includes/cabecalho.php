@@ -18,8 +18,8 @@
 
             <nav id="menu">
                 <ul>
-                    <li><a href="#">Informações</a></li>
-                    <li><a href="/documentacao/guiaUsuario.php">Sobre</a></li>
+                    <li><a href="/documentacao/guiaUsuario.php">Informações</a></li>
+                    <li><a href="/paginaTime.php">A Equipe</a></li>
                     <li><a href="#">Contato</a></li>
                 </ul>
             </nav>
