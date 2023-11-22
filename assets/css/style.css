@@ -193,6 +193,15 @@ main{
     text-align: center;
 }
 
+#contato{
+    display: block;
+    margin-bottom: 310px;
+}
+
+#contato .blocoFormRoxo{
+    width:  500px
+}
+
 /* Form Guia */
 
 .guia-sobre{

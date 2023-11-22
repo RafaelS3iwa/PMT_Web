@@ -7,7 +7,9 @@
         $id_usuario = $_SESSION['id_usuario'];
         $usuarioController = new UsuarioController(); 
         $usuario = $usuarioController->listarDadosUsuario($id_usuario);
+        var_dump($usuario);
     }else {
+
     echo "Dados do usuário não encontrados na sessão.";
     }
 

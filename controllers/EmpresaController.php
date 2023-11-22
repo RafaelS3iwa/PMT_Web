@@ -26,9 +26,20 @@ class EmpresaController
                     'senha' => password_hash($_POST['senha'], PASSWORD_DEFAULT)
                 ]; 
                 
-                $this->empresaModel->cadastrar($dados); 
-                header('Location: ../index.php'); 
+                if($this->empresaModel->cadastrar($dados)){
+
+                    $email = $_POST['email_corporativo']; 
+                    $senha = $_POST['senha'];
+        
+                    $empresa = Empresa::autenticarLogin($email, $senha);
+                    if ($empresa){ 
+                        session_start();
+                        $_SESSION['id_empresa'] = $empresa['id_empresa'];
+                        header("Location: /admin/empresas/index.php"); 
+                }
+                header("Location: /admin/empresas/index.php"); 
                 exit;
+            }
             }
         }
     }

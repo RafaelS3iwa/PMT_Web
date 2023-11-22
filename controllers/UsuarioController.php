@@ -1,6 +1,6 @@
 <?php 
     require_once $_SERVER['DOCUMENT_ROOT'] . "/models/Usuarios.php";
-
+    session_start();
 class UsuarioController
 {
     private $usuarioModel; 
@@ -21,13 +21,37 @@ class UsuarioController
                 'senha' => password_hash($_POST['senha'], PASSWORD_DEFAULT)
             ];
 
-            $this->usuarioModel->cadastrar($dados);
-            session_start();
+           if($this->usuarioModel->cadastrar($dados)){
+       
+            $email = $_POST['email']; 
+            $senha = $_POST['senha'];
+            $usuario = Usuario::autenticarLogin($email, $senha);
 
-            header('Location: index.php'); 
-            exit; 
+            if ($usuario){ 
+                $_SESSION['id_usuario'] = $usuario['id_usuario'];
+                    if(Usuario::isCandidato($usuario['id_usuario'])) {
+                        $id_candidato = Usuario::getIdCandidato($usuario['id_usuario']); 
+                        if ($usuario){ 
+                            $_SESSION['id_usuario'] = $usuario['id_usuario'];
+                       
+                                if(Usuario::isCandidato($usuario['id_usuario'])) {
+                              
+                                    $id_candidato = Usuario::getIdCandidato($usuario['id_usuario']); 
+                                    $_SESSION['id_candidato'] = $id_candidato;
+                                    header("Location: /admin/candidatos/index.php");
+                                    exit;
+                                }else{
+                                    $_SESSION['id_usuario'] = $usuario['id_usuario'];
+                                    header("Location: index.php");
+                                    exit;
+                                }
+                    }
+           }
         }
-
+        header("Location: index.php");
+        exit;
+    }
+    }
     }
 
     public function loginUsuario(){
@@ -47,12 +71,12 @@ class UsuarioController
                     $_SESSION['id_usuario'] = $usuario['id_usuario'];
                
                         if(Usuario::isCandidato($usuario['id_usuario'])) {
-                            session_start();
+                      
                             $id_candidato = Usuario::getIdCandidato($usuario['id_usuario']); 
                             $_SESSION['id_candidato'] = $id_candidato;
                             header("Location: /admin/candidatos/index.php");
                         }else{
-                            session_start();
+                  
                             $_SESSION['id_usuario'] = $usuario['id_usuario'];
                             header("Location: index.php");
                         }
