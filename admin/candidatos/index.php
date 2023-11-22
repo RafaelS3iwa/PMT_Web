@@ -5,9 +5,8 @@ $candidatoController->candidatar();
 $vagas = $candidatoController->listarVagas();
 ?>
 
-<main>
+<main id="index-candidato">
     <div class="container">
-        <h3>Aqui vão aparecer as Vagas</h3>
         <div class="lista-vagas">
             <?php foreach ($vagas as $vaga) : ?>
                 <form action="index.php" method="post">

@@ -4,7 +4,7 @@
     <div class="guia-sobre-topicos">
     <div class="blocoFormRoxo">
         <h1 class="titulo-guia">Primeiro Passo: O seu Cadastro</h1>
-        <img class="imagemTopicos" src="/assets/img/pixel7.jpg">
+        <img class="imagemTopicos" src="/assets/img/pixel7.jpg"  height="250">
         <p class="texto-guia">Vamos guiá-lo através de um cadastro rápido e intuitivo. Em poucos minutos, você estará pronto
             para explorar oportunidades de estágio emocionantes. Seguindo os passos a baixo:</p>
         <div>

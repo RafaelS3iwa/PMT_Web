@@ -5,7 +5,7 @@
 <div class="guia-sobre-topicos">
     <div class="blocoFormRoxo"> 
         <h1 class="titulo-guia">Último Passo: Escolhas com Leveza no PMT!</h1>
-        <img class="imagemTopicos" src="/assets/img/pixelparabens.jpg">
+        <img class="imagemTopicos" src="/assets/img/pixelparabens.jpg" height="250">
         <p class="texto-guia">Chegamos ao último capítulo da nossa jornada no PMT, e queremos que você se sinta no comando, mas com leveza
             e tranquilidade. Aqui, suas escolhas moldam o futuro da sua equipe, mas sempre com a opção de ajustar o
             curso quando necessário.</p>

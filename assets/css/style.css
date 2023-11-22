@@ -13,6 +13,7 @@
     display: flex;
     flex-wrap: wrap-reverse;
     gap: 30px;
+    margin-top: 85px;
 }
 
 .vaga {
@@ -215,6 +216,7 @@ main{
 #imagemLogo{
     position: relative;
     top: 165px
+
 }
 
 .titulo-guia-index{
@@ -500,6 +502,16 @@ main{
     bottom: -335px;
 }
 
+.box-chamadas-coluna .botao-roxo{
+    position: absolute;
+    top: 70px;
+    left: 10px;
+}
+
+.box-chamadas-index .botao-roxo{
+    position: absolute;
+    left: 15px;
+}
 
 #box-chamadas h3 {
     color: var(--texto);
@@ -655,13 +667,16 @@ main{
 
 
 /* Cadastro e Login */
+#login{
+    display: block;
+}   
+
 .blocoFormRoxo {
     background-color: #44007E;
     border:1px solid #FFA452;
     padding: 20px;
     width: 1150px;
     border-radius: 30px;
-
 }
 .blocoFormRoxoLogin {
     background-color: #44007E;
@@ -785,7 +800,9 @@ main{
 .blocoCentralizado{
     display: flex;
     justify-content: center;
-}
+    margin-top: 100px;
+    margin-bottom: 535px;
+}   
 
 
 .etapa{
@@ -982,10 +999,48 @@ main{
 }
 
 /* Cadastrar Vaga */
+.nomeEmpresa{
+    color: var(--texto);
+    font-size: 16px;
+    font-weight: bold;
+    text-align: end;
+    position: relative;
+    right: -400px;
+}
+
+.principalAreaInteresse{
+    color: var(--texto);
+    font-size: 16px;
+    font-weight: bold;
+    text-align: end;
+    position: relative;
+    right: -400px;
+}
+
+.nomeUsuario{
+    color: var(--texto);
+    font-size: 16px;
+    font-weight: bold;
+    text-align: end;
+    position: relative;
+    right: -400px;
+}
+
+
 #cadastro-vaga{
     display: flex;
     justify-content: center;
+    margin-top: 160px;
+    margin-bottom: 221px;
+}
+
+#historico-vaga .blocoCentralizado{
     margin-top: 150px;
+    margin-bottom:  388px;
+}
+
+#index-candidato{
+    margin-bottom:  479px;
 }
 
 /* Rodapé */
@@ -993,7 +1048,7 @@ main{
 #rodape {
     width: 100%;
     height: 75px;
-    margin-top: 80px;
+    margin-top: 175px;
     padding-top: 30px;
     background-color: var(--primaria2);
 }

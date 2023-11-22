@@ -61,7 +61,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/includes/cabecalho.php";
   <section class="container">
     <h2 class="Sobre">Sobre</h2>
     <div id="box-chamadas">
-      <div class="box-chamadas-coluna">
+      <div class="box-chamadas-index">
         <div class="box-nossa-historia">
           <h3>Nossa História</h3>
           <div class="botao-roxo">
@@ -69,7 +69,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/includes/cabecalho.php";
           </div>
         </div>
       </div>
-      <div class="box-chamadas-coluna">
+      <div class="box-chamadas-index">
         <div class="box-time">
           <h3>O Time</h3>
           <div class="botao-roxo">

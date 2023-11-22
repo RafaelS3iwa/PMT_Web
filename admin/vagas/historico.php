@@ -6,7 +6,7 @@ $vagaController = new VagaController();
 $vagaController->avaliarCandidato();
 ?>
 
-<main>
+<main id="historico-vaga">
     <div class="blocoCentralizado">
 
         <div class="blocoFormRoxo">

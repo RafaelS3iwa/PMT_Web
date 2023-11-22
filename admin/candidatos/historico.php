@@ -4,7 +4,6 @@
 
 <main>
     <div class="blocoCentralizado">
-
         <div class="blocoFormRoxo">
             <h1 class="titulo-h1">Seu Histórico</h1>
             <table class="table table-striped">
