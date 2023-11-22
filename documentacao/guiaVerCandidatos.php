@@ -5,7 +5,7 @@
     <div class="guia-sobre-topicos">
     <div class="blocoFormRoxo">
         <h1 class="titulo-guia">Terceiro Passo: Ver os Candidatos Interessados</h1>
-        <img class="imagemTopicos" src="">
+        <img class="imagemTopicos" src="/assets/img/pixel14.jpg">
         <p class="texto-guia">No PMT, queremos que você tenha uma visão clara e abrangente dos talentos que estão interessados em fazer parte da sua equipe extraordinária. Imagine ter o poder de ver todos os candidatos que se apaixonaram por suas oportunidades em um único lugar. Prepare-se para a magia da mecânica de visão de candidatos do PMT</p>
         <div>
             <h4 class="titulo-topico">Passo 1: Dashboard Intuitivo:</h4>
@@ -23,7 +23,7 @@
             <h3 class="titulo-proximo">Vamos para o Próximo Tópico??</h3>
             <div>
                 <h4 class="titulo-topico">4.Aceitar ou Rejeitar os Candidatos</h4>
-                <img class="imagemTopicos" src="/assets/img/teste3.jpg">
+                <img class="imagemTopicos" src="/assets/img/pixel15.jpg">
                 <a href="/documentacao/guiaAprovarRejeitar.php">
                 <button type="button" class="botao-guia">Saiba Mais</button>
                 </a>

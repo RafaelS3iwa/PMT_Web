@@ -3,7 +3,7 @@
         <div class="guia-sobre-topicos">
             <div class="blocoFormRoxo">
                 <h1 class="titulo-guia">Último Passo: Encontre, Conquiste e Triunfe.</h1>
-                <img class="imagemTopicos" src="">
+                <img class="imagemTopicos" src="/assets/img/pixelparabens.jpg">
                 <p class="texto-guia">Chegamos ao final do nosso guia, e esperamos que esteja animado para começar sua jornada no EstágioConnect! Lembre-se, tudo aqui é para facilitar o caminho até o seu estágio dos sonhos. <br>Se, ao longo do tempo, você sentir a necessidade de ajustar suas informações ou até mesmo decidir que é hora de dizer adeus, queremos garantir que o processo seja simples e tranquilo.</p>
                     <div>
                         <h4 class="titulo-topico">Alterar Suas Informações: </h4>

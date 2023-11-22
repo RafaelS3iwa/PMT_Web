@@ -4,7 +4,7 @@
     <div class="guia-sobre-topicos">
     <div class="blocoFormRoxo">
         <h1 class="titulo-guia">Primeiro Passo: O seu Cadastro</h1>
-        <img class="imagemTopicos" src="/assets/img/teste.jpg">
+        <img class="imagemTopicos" src="/assets/img/pixel7.jpg">
         <p class="texto-guia">Vamos guiá-lo através de um cadastro rápido e intuitivo. Em poucos minutos, você estará pronto
             para explorar oportunidades de estágio emocionantes. Seguindo os passos a baixo:</p>
         <div>
@@ -32,7 +32,7 @@
             <h3 class="titulo-proximo">Vamos para o Próximo Tópico??</h3>
             <div>
                 <h4 class="titulo-topico">2.Se Tornando um Candidato</h4>
-                <img class="imagemTopicos" src="/assets/img/teste3.jpg">
+                <img class="imagemTopicos" src="/assets/img/pixel8.jpg">
                 <a href="/documentacao/guiaCandidatoCadastro.php">
                     <button type="button" class="botao-guia">Saiba Mais</button>
                 </a>

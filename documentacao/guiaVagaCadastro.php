@@ -6,7 +6,7 @@
 
         <div class="blocoFormRoxo">
             <h1 class="titulo-guia">Segundo Passo: Sua Empresa, Suas Vagas, Seu Mundo!</h1>
-            <img class="imagemTopicos" src="">
+            <img class="imagemTopicos" src="/assets/img/pixel17.jpg">
             <p class="texto-guia">Preparado para dar vida a oportunidades que fazem os talentos sonharem acordados? No PMT, o poder está em suas mãos! Vamos mostrar como você pode criar vagas que não apenas preencham espaços, mas também transformem seu ambiente de trabalho. Segure firme, porque criar suas próprias vagas nunca foi tão emocionante!</p>
                 <div>
                     <h4 class="titulo-topico">Passo 1: Área de Atuação da Vaga:</h4>
@@ -31,8 +31,8 @@
                 <div>
                     <h3 class="titulo-proximo">Vamos para o Próximo Tópico??</h3>
                     <div>
-                    <h4 class="titulo-topico">2.Vendos os Candidatos Interessados</h4>
-                    <img class="imagemTopicos" src="/assets/img/teste3.jpg">
+                    <h4 class="titulo-topico">3.Vendos os Candidatos Interessados</h4>
+                    <img class="imagemTopicos" src="/assets/img/pixel14.jpg">
                     <a href="/documentacao/guiaVerCandidatos.php">
                     <button type="button" class="botao-guia">Saiba Mais</button>
                     </a>

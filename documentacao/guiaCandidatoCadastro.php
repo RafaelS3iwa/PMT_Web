@@ -3,7 +3,7 @@
     <div class="guia-sobre-topicos">
         <div class="blocoFormRoxo">
             <h1 class="titulo-guia">Segundo Passo: Se tornar um Candidato</h1>
-            <img class="imagemTopicos" src="/assets/img/teste.jpg">
+            <img class="imagemTopicos" src="/assets/img/pixel8.jpg">
             <p class="texto-guia">Entendemos se, ao olhar para o formulário, você pensar: "Parece um pouco extenso, será que realmente preciso disso tudo?" Relaxa, estamos aqui para explicar o motivo por trás de cada pergunta e por que este formulário é mais como a criação de um pequeno currículo pessoal do que apenas um cadastro comum. Por que Um Formulário Tão Detalhado?</p>
             <div>
                 <h4 class="titulo-topico">Currículo Personalizado: </h4>
@@ -24,7 +24,7 @@
                 <h3 class="titulo-proximo">Vamos para o Próximo Tópico??</h3>
                 <div>
                     <h4 class="titulo-topico">3.Interaja com as Vagas</h4>
-                    <img class="imagemTopicos" src="/assets/img/teste3.jpg">
+                    <img class="imagemTopicos" src="/assets/img/pixel9.jpg">
                     <a href="/documentacao/guiaInteracao.php">
                         <button type="button" class="botao-guia">Saiba Mais</button>
                     </a>
