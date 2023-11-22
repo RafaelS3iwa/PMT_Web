@@ -335,7 +335,7 @@ main{
 .botao-guia{
     position:relative;
     bottom: 75px; 
-    left: 350px;
+    left: 400px;
     width: 150px;
     height: 50px;
     color: var(--texto);
@@ -348,13 +348,23 @@ main{
 }
 
 .botao-final{
-    display: flex;
-    margin-top: 50px;
-    justify-content: center;
+    background-color: #000;
+    background-color: var(--laranja);
+    font-weight: bold;
     width: 150px;
     height: 50px;
-    box-shadow: -1px 4px black;
+    z-index: 999999;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.5);
+    transition: right 0.5s;
+    border: 2px solid var(--secundaria2);
+    border-radius: 15px;
 }
+
+/* Guia-Sobre */
+.guia-sobre-topicos .imagemTopicos {
+    height: 250px;
+}
+
 /* Forms de Cadastro */
 #escolhaCadastro{
     margin-top: 150px;

@@ -6,7 +6,7 @@
 
             <div class="blocoFormRoxo">
                 <h1 class="titulo-guia">Primeiro Passo: O seu Cadastro</h1>
-                <img class="imagemTopicos" src="">
+                <img class="imagemTopicos" src="/assets/img/pixel17.jpg">
                 <p class="texto-guia">Se você está procurando uma forma fácil e eficiente de encontrar os talentos que farão sua empresa brilhar, você está no lugar certo. O PMT está aqui para simplificar e otimizar o processo de recrutamento. Vamos mostrar como é fácil se cadastrar e começar a construir sua equipe dos sonhos!</p>
                     <div>
                         <h4 class="titulo-topico">Passo 1: Nome da Empresa:</h4>
@@ -32,7 +32,7 @@
                         <h3 class="titulo-proximo">Vamos para o Próximo Tópico??</h3>
                         <div>
                         <h4 class="titulo-topico">2.Cadastrando suas Vagas</h4>
-                        <img class="imagemTopicos" src="/assets/img/teste3.jpg">
+                        <img class="imagemTopicos" src="/assets/img/pixel13.jpg">
                         <a href="/documentacao/guiaVagaCadastro.php">
                         <button type="button" class="botao-guia">Saiba Mais</button>
                         </a>
