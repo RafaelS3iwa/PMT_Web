@@ -791,6 +791,32 @@ main{
     display: block;
 }
 
+.btn-Cadastro{
+    background-color: #000;
+    background-color: var(--laranja);
+    font-weight: bold;
+    width: 150px;
+    height: 50px;
+    z-index: 999999;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.5);
+    transition: right 0.5s;
+    border: 2px solid var(--laranja);
+    border-radius: 15px;
+}
+
+.btn-Cancelar {
+    background-color: #000;
+    background-color: var(--laranja);
+    font-weight: bold;
+    width: 150px;
+    height: 50px;
+    z-index: 999999;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.5);
+    transition: right 0.5s;
+    border: 2px solid var(--laranja);
+    border-radius: 15px;
+}
+
 /* Editar Perfil Usuário */
 #editar-candidato{
     margin-top: 125px;
@@ -856,9 +882,6 @@ main{
     justify-content: space-between;
     align-items: center;
     margin-bottom: 25px;
-}
-
-.form-editar .col{
 }
 
 .botoes-editar{
