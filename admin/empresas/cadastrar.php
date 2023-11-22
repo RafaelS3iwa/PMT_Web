@@ -4,10 +4,9 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/controllers/EmpresaController.php";
 $empresaController = new EmpresaController();
 $empresaController->cadastrarEmpresa();
 ?>
-<main>
+<main class="cadastro-empresa">
     <div class="container mt-5">
         <form action="/admin/empresas/cadastrar.php" method="post" class="estiloForm">
-
 
             <div class="form-row">
                 <div class="col">
@@ -39,28 +38,14 @@ $empresaController->cadastrarEmpresa();
             </div>
 
             <div class="form-row">
-
                 <div class="col">
                     <label for="senha" class="form-label">Senha</label>
                     <div class="input-group">   
                         <input type="password" name="senha" id="senha" class="form-control" required>
-                        <button type="button" id="toggleSenha" class="btn btn-outline-secondary">
-                            <i class="fa fa-eye-slash"></i>
-
-                        </button>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <label for="senha" class="form-label">Confirmar Senha</label>
-                    <div class="input-group">
-                        <input type="password" name="senha" id="senha" class="form-control" required>
-                        <button type="button" id="toggleConfirmarSenha" class="btn btn-outline-secondary">
-                            <i class="fa fa-eye-slash"></i>
-                        </button>
                     </div>
                 </div>
             </div>
+
             <div class="col-12">
                 <button type="submit">Cadastrar</button>
                 <a href="/index.php" class="btn btn-secondary">Cancelar</a>

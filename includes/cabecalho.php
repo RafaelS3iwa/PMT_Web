@@ -20,7 +20,7 @@
                 <ul>
                     <li><a href="/documentacao/guiaUsuario.php">Informações</a></li>
                     <li><a href="/paginaTime.php">A Equipe</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="../contato.php">Contato</a></li>
                 </ul>
             </nav>
 

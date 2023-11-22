@@ -41,10 +41,9 @@
 
             <div id="botaoTopo">
                 <img src="/assets/img/icone-usuario.png" height="60" class="botaoUsuario">
-                <nav id="menuBotaoLogin">
+                <nav id="menuBotao">
                     <ul>
                         <li><a href="/admin/empresas/editar.php">Editar</a></li>
-                        <li><a href="/admin/vagas/historico.php">Histórico</a></li>
                         <li><a href="/controllers/logout.php">Sair</a></li>
                     </ul>
                 </nav>

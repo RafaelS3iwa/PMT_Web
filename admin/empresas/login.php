@@ -5,7 +5,7 @@
     $empresaController->loginEmpresa(); 
 ?>
 
-<main>
+<main id="login">
     <div class="container mt-3">
         <form action="/admin/empresas/login.php" method="post" class="estiloForm">
             <div>
@@ -18,8 +18,7 @@
             </div>
     
             <div class="botoes">
-                <button type="submit" class="btn btn-primary">Confirmar</button>
-                <a href="index.php" class="btn btn-secondary">Cancelar</a>
+                <button type="submit" class="entrar">Entrar</button>
             </div>
         </form>
     </div>
