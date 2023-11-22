@@ -5,7 +5,7 @@
 
             <div class="blocoFormRoxo">
                 <h1 class="titulo-guia">Terceiro Passo: Interaja com as Vagas</h1>
-                <img class="imagemTopicos" src="/assets/img/pixel11.jpg">
+                <img class="imagemTopicos" src="/assets/img/pixel9.jpg">
                 <p class="texto-guia">Dizemos adeus às listas tradicionais de vagas e damos as boas-vindas a uma experiência totalmente nova! No PMT, as oportunidades se revelam de uma maneira única, misturando-se com as palavras-chave que você escolhe. É como um encontro perfeito entre você e sua próxima grande oportunidade.</p>
                     <div>
                         <h4 class="titulo-topico">Palavras-Chave que Falam por Você:</h4>

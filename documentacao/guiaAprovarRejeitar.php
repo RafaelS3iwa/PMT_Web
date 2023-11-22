@@ -2,9 +2,10 @@
 
 
 <main>
+<div class="guia-sobre-topicos">
     <div class="blocoFormRoxo"> 
         <h1 class="titulo-guia">Último Passo: Escolhas com Leveza no PMT!</h1>
-        <img class="imagemTopicos" src="">
+        <img class="imagemTopicos" src="/assets/img/pixelparabens.jpg">
         <p class="texto-guia">Chegamos ao último capítulo da nossa jornada no PMT, e queremos que você se sinta no comando, mas com leveza
             e tranquilidade. Aqui, suas escolhas moldam o futuro da sua equipe, mas sempre com a opção de ajustar o
             curso quando necessário.</p>
@@ -33,11 +34,12 @@
             <h3 class="titulo-proximo">Parabéns! Agora só falta você Encontrar, Conquistar e Triunfar!</h3>
             <div>
                 <a href="../index.php">
-                <i class="fa-regular fa-house fa-beat" style="color: #FFA452;"></i>
+                <button class="botao-final">Voltar</button>
                 </a>
             </div>
         </div>
     </div>
+</div>
     <main>
 
         <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/includes/rodape.php" ?>
